@@ -48,7 +48,7 @@ function getAreaNamebyID(areaID){
 
 var geocoder,map,marker = null;
 var init = function() {
-    var center = new soso.maps.LatLng(<?php echo isset($rt['lng']) ? $rt['lng'] : '31.675396';?>,<?php echo isset($rt['lat']) ? $rt['lat'] : '120.737695';?>);
+    var center = new soso.maps.LatLng(<?php echo isset($rt['latitude']) ? $rt['latitude'] : '31.675396';?>,<?php echo isset($rt['longitude']) ? $rt['longitude'] : '120.737695';?>);
     map = new soso.maps.Map(document.getElementById('container'),{
         center: center,
         zoomLevel: 15
@@ -98,8 +98,8 @@ var init = function() {
         lab.setContent(
             latlng.getLat().toFixed(6)+","+latlng.getLng().toFixed(6)
         );
-        $("#longitude1").val(latlng.getLat().toFixed(6));
-        $("#latitude1").val(latlng.getLng().toFixed(6));
+        $("#longitude1").val(latlng.getLng().toFixed(6));
+        $("#latitude1").val(latlng.getLat().toFixed(6));
         
     };
 }

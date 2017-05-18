@@ -17,6 +17,9 @@ if ( $_POST['action'] )
         case 'get_status_button':
             $app->action( 'order', 'ajax_get_status_button', $_POST['status'] );
             break;
+        default:
+            $app->action( 'order', $_POST['action'], $_POST );
+        break;
     }
     exit;
 }

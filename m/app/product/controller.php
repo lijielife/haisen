@@ -541,6 +541,7 @@ class ProductController extends Controller
         $rrL = $this->action('common','get_userconfig');
         if($rrL['guanzhubuy']=='0'){
             $sql = "SELECT is_subscribe FROM `{$this->App->prefix()}user` WHERE user_id='$uid' LIMIT 1";
+            $this->_writeLog(__FILE__ . $sql);
             $is_subscribe = $this->App->findvar($sql);
             $is_subscribe = empty($is_subscribe) ? '0' : $is_subscribe;
             if($is_subscribe=='0'){
@@ -1054,6 +1055,10 @@ class ProductController extends Controller
     }
 
         //ajax获取购买记录商品
+    private function _writeLog($message){
+        $message = 'time: ' . date('Y-m-d H:i:s') . '|' . $message;
+        file_put_contents('/wwwroot/custom_fenxiao/huahai.log_' . date('Y-m-d'), $message . PHP_EOL, FILE_APPEND);
+    }
     
     /* 析构函数 */
     public function  __destruct() {

@@ -42,7 +42,7 @@ foreach ( $rt['categoodslist'] as $k => $row )
         <div style="padding:4px;">
         <a style="background:#fff; padding:5px; display:block;" href="<?php echo ADMIN_URL.($row['is_jifen']=='1'?'exchange':'product').'.php?id='.$row['goods_id'];?>">
             <div style=" height:150px; overflow:hidden; text-align:center;">
-                <img src="<?php echo $row['goods_img'];?>" style="max-width:99%; height:130px;display:inline;" alt="<?php echo $row['goods_name'];?>"/>
+                <img src="<?php echo $row['goods_img'];?>" style="max-width:99%; height:130px;width:130px;display:inline;" alt="<?php echo $row['goods_name'];?>"/>
             </div>
             <p style="line-height:20px; height:20px; overflow:hidden; text-align:center">
             <?php if ( $row['goods_zone'] == 2 ) { ?>
@@ -90,7 +90,7 @@ foreach ( $rt['categoodspage']['list'] as $kk => $v ) {
         <div style="padding:4px;">
         <a style="background:#fff; padding:5px; display:block;" href="<?php echo ADMIN_URL.'group_product.php?id='.$group['group_id']; ?>">
             <div style=" height:150px; overflow:hidden; text-align:center;">
-                <img src="<?php echo SITE_URL . $group['goods_img']; ?>" style="max-width:99%; height:130px;display:inline;" />
+                <img src="<?php echo SITE_URL . $group['goods_img']; ?>" style="max-width:99%; height:130px;width:130px;display:inline;" />
             </div>
             <p style="line-height:20px; height:20px; overflow:hidden; text-align:center">
                 [团购]<?php echo $group['group_name']; ?>

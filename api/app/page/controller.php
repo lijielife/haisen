@@ -329,6 +329,8 @@ class PageController extends Controller{
                             }
                         }
                     }
+                    
+		    $this->writeLog( __FUNCTION__ . "|user_id:" . $uid . '|' . json_encode($dd, JSON_UNESCAPED_UNICODE) );
                     if($uid > 0){
                         $this->App->update('user',$dd,'user_id',$uid);
                         $counts = $this->App->findvar("SELECT COUNT(user_id) FROM `{$this->App->prefix()}user` WHERE is_subscribe='1'");
@@ -1055,6 +1057,10 @@ class PageController extends Controller{
         return $temp;
     }
     
+    function writeLog($message){
+        $message = 'time: ' . date('Y-m-d H:i:s') . '|' . $message;
+        file_put_contents('/wwwroot/custom_fenxiao/huahai.log_' . date('Y-m-d'), $message . PHP_EOL, FILE_APPEND);
+    }
         
     function update_daili_tree( $uid = 0 )
     {

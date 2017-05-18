@@ -1,0 +1,19 @@
+time: 2017-05-17 15:18:51|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:7461
+time: 2017-05-17 15:18:51|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:7460
+time: 2017-05-17 15:18:51|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 3 level | money:6|ticheng:0.2|rank:12|parent_id:3154
+time: 2017-05-17 15:18:51|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 4 level | money:6|ticheng:0.2|rank:12|parent_id:1598
+time: 2017-05-17 15:25:01|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 1 level | money:36|ticheng:0.36|rank:12|parent_id:7461
+time: 2017-05-17 15:25:01|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 2 level | money:24|ticheng:0.24|rank:12|parent_id:7460
+time: 2017-05-17 15:25:01|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 3 level | money:20|ticheng:0.2|rank:12|parent_id:3154
+time: 2017-05-17 15:25:01|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7708| 4 level | money:20|ticheng:0.2|rank:12|parent_id:1598
+time: 2017-05-17 15:29:44|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7195| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:7069
+time: 2017-05-17 15:29:44|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7195| 3 level | money:0|ticheng:0|rank:12|parent_id:7051
+time: 2017-05-17 15:29:44|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7195| 4 level | money:0|ticheng:0|rank:12|parent_id:5932
+time: 2017-05-17 17:47:11|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:6598| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:1891
+time: 2017-05-17 17:47:11|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:6598| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:312
+time: 2017-05-17 17:47:11|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:6598| 3 level | money:0|ticheng:0|rank:12|parent_id:242
+time: 2017-05-17 17:47:11|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:6598| 4 level | money:0|ticheng:0|rank:12|parent_id:238
+time: 2017-05-17 20:05:20|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7200| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:7061
+time: 2017-05-17 20:05:20|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7200| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:6999
+time: 2017-05-17 20:05:20|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7200| 3 level | money:0|ticheng:0|rank:12|parent_id:94
+time: 2017-05-17 23:12:27|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='' LIMIT 1

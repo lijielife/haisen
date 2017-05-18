@@ -239,26 +239,55 @@ class CatalogController extends Controller
     /*店铺列表*/
     public function store_list()
     {
+        /* 获取微信 appid, appsecret */
+        $sql = "SELECT appid, appsecret FROM `{$this->App->prefix()}wxuserset` LIMIT 1";
+        $wxuserset   = $this->App->findrow( $sql );
+        $Import_obj  = new Import;
+        $jssdk_obj   = $Import_obj->wx_jssdk( $wxuserset['appid'], $wxuserset['appsecret'] );
+        $signPackage = $jssdk_obj->GetSignPackage();
+        $this->set( 'signPackage', $signPackage );
+        /* 经纬度 */
+        $longitude = trim( $_GET['longitude'] );
+        $latitude  = trim( $_GET['latitude'] );
+
         $flag = $_GET['flag'];
-        $sql                        = "SELECT * FROM `{$this->App->prefix()}store_class` ORDER BY class_sort DESC ";
-        $store_class_list                = $this->App->find( $sql );
-        $sql                        = "SELECT * FROM `{$this->App->prefix()}store` WHERE class_id = '$flag' AND status = 1 ";
-        $store_list                = $this->App->find( $sql );
-        $title                      = '商铺列表';
+        $sql = "SELECT * FROM `{$this->App->prefix()}store_class` ORDER BY class_sort DESC";
+        $class_list = $this->App->find( $sql );
+        $store_class_list = array();
+        foreach ( (array)$class_list as $k => $v )
+        {
+            $store_class_list[ $v['class_id'] ] = $v;
+        }
+
+        if ( $longitude && $latitude )
+        {
+            $sql = "SELECT *,SQRT(POWER($latitude - latitude, 2) + POWER($longitude  - longitude, 2)) AS d FROM `{$this->App->prefix()}store` WHERE class_id = '$flag' AND status = 1 ORDER BY d ASC";
+        }
+        else
+        {
+            $sql = "SELECT * FROM `{$this->App->prefix()}store` WHERE class_id = '$flag' AND status = 1";
+        }
+        $store_list = $this->App->find( $sql );
+
         $this->set( 'store_list', $store_list );
         $this->set( 'store_class_list', $store_class_list );
         $this->set( 'flag', $flag );
-        // $this->set('store_info',$store_info);
+        $this->set( 'longitude', $longitude );
+        $this->set( 'latitude', $latitude );
+
+        $title = '商铺列表';
         $this->title( $title );
         defined( NAVNAME ) or define( 'NAVNAME', $title );
         $this->meta( 'title', $title );
         $mb = $GLOBALS['LANG']['mubanid'] > 0 ? $GLOBALS['LANG']['mubanid'] : '';
         $this->template( $mb . '/catalog_storeclass' );
     }
+
     /**
      * 店铺详情
      */
-    public function store_detail(){
+    public function store_detail()
+    {
         $store_id                   = $_GET['store_id'];
         $sql                        = "SELECT * FROM `{$this->App->prefix()}store` WHERE store_id = '$store_id' LIMIT 1";
         $store_info                 = $this->App->findrow( $sql );
@@ -275,6 +304,7 @@ class CatalogController extends Controller
         $mb = $GLOBALS['LANG']['mubanid'] > 0 ? $GLOBALS['LANG']['mubanid'] : '';
         $this->template( $mb . '/catalog_store' );
     }
+
     /**
      * 专属产品
      */

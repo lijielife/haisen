@@ -1,47 +1,70 @@
-<link type="text/css" rel="stylesheet" href="<?php echo ADMIN_URL;?>tpl/25/css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="<?php echo ADMIN_URL;?>tpl/25/css.css?time=20170214" media="all" />
 <?php $this->element( '25/top', array( 'lang' => $lang ) ); ?>
 <style type="text/css">
-.pw,.pwt{
-height:26px; line-height:26px;
-border: 1px solid #ddd;
-border-radius: 5px;
-background-color: #fff; padding-left:5px; padding-right:5px;
--moz-border-radius:5px;/*仅Firefox支持，实现圆角效果*/
--webkit-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
--khtml-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
-border-radius:5px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
+.pw, .pwt
+{
+    height:26px; line-height:26px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; padding-left:5px; padding-right:5px;
+    -moz-border-radius:5px;/*仅Firefox支持，实现圆角效果*/
+    -webkit-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
+    -khtml-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
+    border-radius:5px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
 }
-.pw{ width:90%;}
-.usertitle{
-height:22px; line-height:22px;color:#666; font-weight:bold; font-size:14px; padding:5px;
-border-radius: 5px;
-background-color: #ededed; padding-left:5px; padding-right:5px;
--moz-border-radius:5px;/*仅Firefox支持，实现圆角效果*/
--webkit-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
--khtml-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
-border-radius:5px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
+.pw { width:90%; }
+.usertitle
+{
+    height:22px; line-height:22px;color:#666; font-weight:bold; font-size:14px; padding:5px;
+    border-radius: 5px;
+    background-color: #ededed; padding-left:5px; padding-right:5px;
+    -moz-border-radius:5px;/*仅Firefox支持，实现圆角效果*/
+    -webkit-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
+    -khtml-border-radius:5px;/*仅Safari,Chrome支持，实现圆角效果*/
+    border-radius:5px;/*仅Opera，Safari,Chrome支持，实现圆角效果*/
 }
 .pages{ margin-top:20px;}
-.pages a{ background:#ededed; padding:2px 4px 2px 4px; border-bottom:2px solid #ccc; border-right:2px solid #ccc; margin-right:5px;}
-#main table td:hover{ background:#fafafa}
-#main table td p a{ line-height:18px;display:block; padding:1px 5px 1px 5px; float:left; background:#fafafa; border-right:2px solid #d5d5d5;border-radius:10px; margin-right:5px;border-top:1px solid #ededed;border-left:1px solid #ededed; font-size:12px}
-
-#main table td p a.butt-cart2 {
-display: inline-block;
-font-size: 15px;
-width: 70%;
-height: 34px;
-line-height: 34px;
-margin: 6px auto 5px auto;
-padding: 0;
-color: #FFF;
-border-radius: 10px;
-background: #32a000;
-text-align:center;
- background-image:-webkit-gradient(linear,left top,left bottom,from(#92c63e),to(#6aa129));background-image: -webkit-linear-gradient(#92c63e,#6aa129);background-image: linear-gradient(#92c63e,#6aa129);
+.pages a
+{
+    background:#ededed;
+    padding:2px 4px 2px 4px;
+    border-bottom:2px solid #ccc;
+    border-right:2px solid #ccc;
+    margin-right:5px;
+}
+#main table td:hover{ background: #fafafa }
+#main table td p a
+{
+    line-height:18px;
+    display:block;
+    padding:1px 5px 1px 5px;
+    float:left;
+    background:#fafafa;
+    border-right:2px solid #d5d5d5;
+    border-radius:10px;
+    margin-right:5px;
+    border-top:1px solid #ededed;
+    border-left:1px solid #ededed;
+    font-size:12px
+}
+#main table td p a.butt-cart2
+{
+    display: inline-block;
+    font-size: 15px;
+    width: 70%;
+    height: 34px;
+    line-height: 34px;
+    margin: 6px auto 5px auto;
+    padding: 0;
+    color: #FFF;
+    border-radius: 10px;
+    background: #32a000;
+    text-align:center;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#92c63e),to(#6aa129));
+    background-image: -webkit-linear-gradient(#92c63e,#6aa129);
+    background-image: linear-gradient(#92c63e,#6aa129);    
 }
 </style>
-
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
@@ -60,40 +83,41 @@ $( function() {
     $(".yScrollListInList1 ul").css({width:$(".yScrollListInList1 ul li").length*(160+84)+"px"});
     $(".yScrollListInList2 ul").css({width:$(".yScrollListInList2 ul li").length*(160+84)+"px"});
     var numwidth = (160+84)*5;
-    $(".yScrollListInList .yScrollListbtnl").click(function(){
-        var obj=$(this).parent(".yScrollListInList").find("ul");
-        if (!(obj.is(":animated"))) {
-            var lefts=parseInt(obj.css("left").slice(0,-2));
-            if(lefts<30){
-                obj.animate({left:lefts+numwidth},1000);
+    $(".yScrollListInList .yScrollListbtnl").click( function() {
+        var obj = $(this).parent(".yScrollListInList").find("ul");
+        if ( ! (obj.is(":animated")) )
+        {
+            var lefts = parseInt( obj.css("left").slice(0,-2) );
+            if ( lefts < 30 )
+            {
+                obj.animate( {left:lefts + numwidth}, 1000 );
             }
         }
     })
-    $(".yScrollListInList .yScrollListbtnr").click(function(){
-        var obj=$(this).parent(".yScrollListInList").find("ul");
-        var objcds=-(30+(Math.ceil(obj.find("li").length/5)-2)*numwidth);
-        if (!(obj.is(":animated"))) {
-            var lefts=parseInt(obj.css("left").slice(0,-2));
-            if(lefts>objcds){
-                obj.animate({left:lefts-numwidth},1000);
+    $(".yScrollListInList .yScrollListbtnr").click( function() {
+        var obj = $(this).parent(".yScrollListInList").find("ul");
+        var objcds = -(30+(Math.ceil(obj.find("li").length/5)-2)*numwidth);
+        if ( ! (obj.is(":animated")) )
+        {
+            var lefts = parseInt( obj.css("left").slice(0,-2) );
+            if ( lefts > objcds )
+            {
+                obj.animate( {left:lefts-numwidth}, 1000 );
             }
         }
     })
 })
 </script>
 
-
 <div class="yScrollList">
     <div class="yScrollListTitle">
         <h1 class="yth1click">普通订单</h1>
         <h1 id="h1_group_order" class="ytitleh12">团购订单</h1>
-        <!-- <h1 class="ytitleh12">待发货</h1>
-        <h1 class="ytitleh12">待收货</h1> -->
     </div>
     <div class="yScrollListIn">
     <div class="yScrollListInList yScrollListInList1" style="display:block;">
     <div id="main" style="min-height:300px">
-     <table  width="100%" border="0" cellpadding="0" cellspacing="0" style="line-height:25px;  overflow:hidden">
+     <table  width="100%" border="0" cellpadding="0" cellspacing="0" style="line-height:25px; overflow:hidden">
       <?php
        if ( ! empty( $rt['orderlist'] ) ) {
        foreach ( $rt['orderlist'] as $k => $row ) {
@@ -119,8 +143,9 @@ $( function() {
         <p>
         <?php echo $row['op']; ?>
         <?php if ( $row['pay_status'] == '0' && $row['order_status'] != '1' ) { ?>
-        &nbsp;&nbsp;<a href="<?php echo ADMIN_URL.'mycart.php?type=fastpay2&oid='.$row['order_id'];?>">立即支付</a>&nbsp;&nbsp;<a href="<?php echo ADMIN_URL.'user.php?act=orderinfo2014&order_id='.$row['order_id'];?>">详情</a>
+        &nbsp;&nbsp;<a href="<?php echo ADMIN_URL.'mycart.php?type=fastpay2&oid='.$row['order_id'];?>">立即支付</a>
         <?php } ?>
+        &nbsp;&nbsp;<a href="<?php echo ADMIN_URL.'user.php?act=orderinfo2014&order_id='.$row['order_id'];?>">详情</a>
         <div class="clear"></div>
         </p>
         <p style="margin-top:5px; padding-bottom:10px;"></p>

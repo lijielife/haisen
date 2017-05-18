@@ -14,7 +14,7 @@
 <a style="float:right; font-size:14px; color:#fff" href="<?php echo ADMIN_URL;?>">继续购物>></a>
 </div>
 <style type="text/css">
-.checkout{ background:#FFF; padding-top:10px; padding-bottom:10px}
+.checkout{ background:#FFF; padding-top:10px; padding-bottom:80px}
 .checkout p.title {
 background: #eaeaea;
 height: 27px;

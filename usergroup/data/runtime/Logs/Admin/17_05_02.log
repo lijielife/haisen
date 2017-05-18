@@ -1,0 +1,16 @@
+[ 2017-05-02T08:05:06+08:00 ] 39.65.20.139 /usergroup/index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] file_put_contents(/wwwroot/custom_fenxiao/usergroup/data/runtime/Cache/Admin/17c864e00f937e6528a86826c496ba3b.php): failed to open stream: Permission denied /wwwroot/custom_fenxiao/usergroup/simplewind/Core/Library/Think/Storage/Driver/File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:/wwwroot/custom_fenxiao/usergroup/data/runtime/Cache/Admin/17c864e00f937e6528a86826c496ba3b.php
+

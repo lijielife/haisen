@@ -146,13 +146,13 @@ a{text-decoration:none;color: #5c5c5c;}
 .red a{display: block;width: 100%;height:30px;border: 5px;background:#cc3611;box-shadow: 0 0 1px black;color: white;font-size: 0.8em;text-align: center;line-height: 30px;margin-top: 10px;}
 
 
-.yScrollList{width:100%;height:500px;border:1px solid #dcdcdc;background:#ffffff;margin:15px auto 0;}
+.yScrollList{width:99%;height:500px;border:1px solid #dcdcdc;background:#ffffff;margin:15px auto 0;}
 .yScrollListTitle{width:100%;height:38px;line-height:38px;border-bottom:1px solid #dcdcdc;}
 .yScrollListTitle h1{cursor:pointer;font-size:16px;background:#fff;color:#666666;height:38px;border-left:1px solid #dcdcdc;border-right:1px solid #dcdcdc;float:left;position:relative;left:-1px;width:110px;text-align:center;}
 .yScrollListTitle h1.ytitleh12{left:-2px;}
 .yScrollListTitle h1.yth1click{height:42px;border-top:2px solid #e9630a;top:-5px;}
 .yScrollListIn{width:100%;height:224px;position:relative;}
-.yScrollListInList{display:none;width:90%;/* height:224px; */position:absolute;padding:10px 30px;left:0;top:0;overflow:hidden;}
+.yScrollListInList{display:none;width:90%;/* height:224px; */position:absolute;padding:10px 0px;left:0;top:0;overflow:hidden;}
 .yScrollListInList .yScrollListbtn{cursor:pointer;position:absolute;width:13px;height:19px;top:96px;background:url(../images/btnys.png) no-repeat 0 0;}
 .yScrollListInList .yScrollListbtnr{background-position:-14px 0;right:5px;}
 .yScrollListInList .yScrollListbtnl{left:5px;}

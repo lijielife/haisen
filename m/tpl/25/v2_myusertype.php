@@ -16,21 +16,21 @@
         <a href="<?php echo ADMIN_URL.'daili.php?act=myuser';?>"><i></i>我的全部下级<span><?php echo empty($rt['zcount']) ? '0' : $rt['zcount'];?>人</span></a>
         </li>-->
     <?php } ?>
-        <li>
+      <li>
             <a href="<?php echo ADMIN_URL.'daili.php?act=myuser&t=1';?>"><i></i>
-                我的一级代理<span><?php echo empty($rt['zcount1']) ? '0' : $rt['zcount1'];?>人</span>
+                我的一级合伙人<span><?php echo empty($rt['zcount1']) ? '0' : $rt['zcount1'];?>人</span>
             </a>
         </li>
         <li>
             <a href="<?php echo ADMIN_URL.'daili.php?act=myuser&t=2';?>"><i></i>
-                我的二级代理<span><?php echo empty($rt['zcount2']) ? '0' : $rt['zcount2'];?>人</span>
+                我的二级合伙人<span><?php echo empty($rt['zcount2']) ? '0' : $rt['zcount2'];?>人</span>
             </a>
         </li>
-        <li>
+        <!--  <li>
             <a href="<?php echo ADMIN_URL.'daili.php?act=myuser&t=3';?>"><i></i>
-                我的三级代理<span><?php echo empty($rt['zcount3']) ? '0' : $rt['zcount3'];?>人</span>
+                我的三级合伙人<span><?php echo empty($rt['zcount3']) ? '0' : $rt['zcount3'];?>人</span>
             </a>
-        </li>
+        </li>-->
     </ul>
 </div>
 <script type="text/javascript">

@@ -1302,3 +1302,2435 @@ array (
   'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
   'addtime' => 1485218288,
 )
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7441,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1493982896,
+)
+array (
+  'share_uid' => 94,
+  'parent_uid' => 94,
+  'uid' => 7442,
+  'daili_uid' => 94,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=94',
+  'addtime' => 1493983392,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7443,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/?tid=7000&from=timeline&isappinstalled=0',
+  'addtime' => 1493983587,
+)
+array (
+  'share_uid' => 7063,
+  'parent_uid' => 7063,
+  'uid' => 7444,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7063',
+  'addtime' => 1493984271,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7445,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1493984468,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7446,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1493984514,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7447,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1493985494,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7448,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1493986004,
+)
+array (
+  'share_uid' => 231,
+  'parent_uid' => 231,
+  'uid' => 7449,
+  'daili_uid' => 231,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=231',
+  'addtime' => 1493986012,
+)
+array (
+  'share_uid' => 7063,
+  'parent_uid' => 7063,
+  'uid' => 7450,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7063',
+  'addtime' => 1493986307,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7451,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1493986973,
+)
+array (
+  'share_uid' => 7063,
+  'parent_uid' => 7063,
+  'uid' => 7452,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7063',
+  'addtime' => 1493986987,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7453,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1493988018,
+)
+array (
+  'share_uid' => 7063,
+  'parent_uid' => 7063,
+  'uid' => 7454,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7063',
+  'addtime' => 1493988280,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7455,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1493988914,
+)
+array (
+  'share_uid' => 7063,
+  'parent_uid' => 7063,
+  'uid' => 7456,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7063',
+  'addtime' => 1493989826,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7457,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1493990539,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7458,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1493991894,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7459,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1494027048,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7460,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494036776,
+)
+array (
+  'share_uid' => 7460,
+  'parent_uid' => 7460,
+  'uid' => 7461,
+  'daili_uid' => '3154',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7460',
+  'addtime' => 1494037314,
+)
+array (
+  'share_uid' => 7051,
+  'parent_uid' => 7051,
+  'uid' => 7462,
+  'daili_uid' => 7051,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7051',
+  'addtime' => 1494046221,
+)
+array (
+  'share_uid' => 482,
+  'parent_uid' => 482,
+  'uid' => 7463,
+  'daili_uid' => 482,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=482',
+  'addtime' => 1494050848,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7464,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494054613,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7465,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494058547,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7466,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494058627,
+)
+array (
+  'share_uid' => 7461,
+  'parent_uid' => 7461,
+  'uid' => 7467,
+  'daili_uid' => '3154',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7461',
+  'addtime' => 1494059031,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7468,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=groupmessage',
+  'addtime' => 1494061566,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7469,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=groupmessage&isappinstalled=0',
+  'addtime' => 1494061747,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7470,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=groupmessage&isappinstalled=0',
+  'addtime' => 1494061871,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7471,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/',
+  'addtime' => 1494061991,
+)
+array (
+  'share_uid' => 108,
+  'parent_uid' => 108,
+  'uid' => 7472,
+  'daili_uid' => 108,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=108',
+  'addtime' => 1494062605,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7473,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=groupmessage',
+  'addtime' => 1494063102,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7474,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=groupmessage',
+  'addtime' => 1494064190,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7475,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=groupmessage&isappinstalled=0',
+  'addtime' => 1494064975,
+)
+array (
+  'share_uid' => 7063,
+  'parent_uid' => 7063,
+  'uid' => 7476,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7063',
+  'addtime' => 1494066503,
+)
+array (
+  'share_uid' => 7069,
+  'parent_uid' => 7069,
+  'uid' => 7477,
+  'daili_uid' => 7069,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7069',
+  'addtime' => 1494069418,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7478,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494069471,
+)
+array (
+  'share_uid' => 231,
+  'parent_uid' => 231,
+  'uid' => 7479,
+  'daili_uid' => 231,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=231',
+  'addtime' => 1494072962,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7480,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494073365,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7481,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494073469,
+)
+array (
+  'share_uid' => 231,
+  'parent_uid' => 231,
+  'uid' => 7482,
+  'daili_uid' => 231,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=231',
+  'addtime' => 1494074585,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7483,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494075359,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7484,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494075810,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7485,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494076178,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7486,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494113499,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7487,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494114040,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7488,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1494115736,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7489,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494116514,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7490,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494117690,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7491,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494118697,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7492,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494119387,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7493,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494119617,
+)
+array (
+  'share_uid' => 1295,
+  'parent_uid' => 1295,
+  'uid' => 7494,
+  'daili_uid' => 1295,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1295',
+  'addtime' => 1494121509,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7495,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494122606,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7496,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494123032,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7497,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494132659,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7498,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494140641,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7499,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1494150813,
+)
+array (
+  'share_uid' => 7224,
+  'parent_uid' => 7224,
+  'uid' => 7500,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7224',
+  'addtime' => 1494151740,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7501,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1494152848,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7502,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1494154156,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7503,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494156775,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7504,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494157689,
+)
+array (
+  'share_uid' => 7435,
+  'parent_uid' => 7435,
+  'uid' => 7505,
+  'daili_uid' => '3154',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7435',
+  'addtime' => 1494159368,
+)
+array (
+  'share_uid' => 482,
+  'parent_uid' => 482,
+  'uid' => 7506,
+  'daili_uid' => 482,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=482',
+  'addtime' => 1494205886,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7507,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/catalog.php?act=store_list&flag=4&longitude=120.477516&latitude=37.59721&from=singlemessage',
+  'addtime' => 1494206555,
+)
+array (
+  'share_uid' => 7075,
+  'parent_uid' => 7075,
+  'uid' => 7508,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7075',
+  'addtime' => 1494216935,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7509,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494227755,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7510,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494243313,
+)
+array (
+  'share_uid' => 102,
+  'parent_uid' => 102,
+  'uid' => 7511,
+  'daili_uid' => 102,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=102',
+  'addtime' => 1494244768,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7512,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1494245707,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7513,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494290498,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7514,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494291568,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7515,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494292055,
+)
+array (
+  'share_uid' => 7069,
+  'parent_uid' => 7069,
+  'uid' => 7516,
+  'daili_uid' => 7069,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7069',
+  'addtime' => 1494294599,
+)
+array (
+  'share_uid' => 7069,
+  'parent_uid' => 7069,
+  'uid' => 7517,
+  'daili_uid' => 7069,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7069',
+  'addtime' => 1494295135,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7518,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494302480,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7519,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494302603,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7520,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494302917,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7521,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494303051,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7522,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494303145,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7523,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494303403,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7524,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494303632,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7525,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494303814,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7526,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494304143,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7527,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494304201,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7528,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494305041,
+)
+array (
+  'share_uid' => 7528,
+  'parent_uid' => 7528,
+  'uid' => 7529,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7528',
+  'addtime' => 1494305667,
+)
+array (
+  'share_uid' => 7069,
+  'parent_uid' => 7069,
+  'uid' => 7530,
+  'daili_uid' => 7069,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7069',
+  'addtime' => 1494307758,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7531,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494310375,
+)
+array (
+  'share_uid' => 7051,
+  'parent_uid' => 7051,
+  'uid' => 7532,
+  'daili_uid' => 7051,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7051',
+  'addtime' => 1494331567,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7533,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494381323,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7534,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494382852,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7535,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494384916,
+)
+array (
+  'share_uid' => 94,
+  'parent_uid' => 94,
+  'uid' => 7536,
+  'daili_uid' => 94,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=94',
+  'addtime' => 1494387469,
+)
+array (
+  'share_uid' => 7085,
+  'parent_uid' => 7085,
+  'uid' => 7537,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7085',
+  'addtime' => 1494404733,
+)
+array (
+  'share_uid' => 7537,
+  'parent_uid' => 7537,
+  'uid' => 7538,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7537',
+  'addtime' => 1494405035,
+)
+array (
+  'share_uid' => 777,
+  'parent_uid' => 777,
+  'uid' => 7539,
+  'daili_uid' => 777,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=777',
+  'addtime' => 1494414315,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7540,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494414726,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7541,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494415412,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7542,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1494415493,
+)
+array (
+  'share_uid' => 7442,
+  'parent_uid' => 7442,
+  'uid' => 7543,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7442',
+  'addtime' => 1494415805,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7544,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1494416165,
+)
+array (
+  'share_uid' => 4804,
+  'parent_uid' => 4804,
+  'uid' => 7545,
+  'daili_uid' => '115',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=4804',
+  'addtime' => 1494420942,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7546,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494421590,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7547,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/',
+  'addtime' => 1494454090,
+)
+array (
+  'share_uid' => 4804,
+  'parent_uid' => 4804,
+  'uid' => 7548,
+  'daili_uid' => '115',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=4804',
+  'addtime' => 1494457796,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7549,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494458292,
+)
+array (
+  'share_uid' => 3976,
+  'parent_uid' => 3976,
+  'uid' => 7550,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3976',
+  'addtime' => 1494462869,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7551,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494466389,
+)
+array (
+  'share_uid' => 3976,
+  'parent_uid' => 3976,
+  'uid' => 7552,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3976',
+  'addtime' => 1494469013,
+)
+array (
+  'share_uid' => 3976,
+  'parent_uid' => 3976,
+  'uid' => 7553,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3976',
+  'addtime' => 1494469626,
+)
+array (
+  'share_uid' => 104,
+  'parent_uid' => 104,
+  'uid' => 7554,
+  'daili_uid' => 104,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=104',
+  'addtime' => 1494470545,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7555,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494471782,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7556,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494474241,
+)
+array (
+  'share_uid' => 104,
+  'parent_uid' => 104,
+  'uid' => 7557,
+  'daili_uid' => 104,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=104',
+  'addtime' => 1494478760,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7558,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1494482359,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7559,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494485323,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7560,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494486010,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7561,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494486086,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7562,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494486414,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7563,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494489092,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7564,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1494493473,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7565,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494493501,
+)
+array (
+  'share_uid' => 3315,
+  'parent_uid' => 3315,
+  'uid' => 7566,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3315',
+  'addtime' => 1494494553,
+)
+array (
+  'share_uid' => 7358,
+  'parent_uid' => 7358,
+  'uid' => 7567,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7358',
+  'addtime' => 1494497783,
+)
+array (
+  'share_uid' => 7527,
+  'parent_uid' => 7527,
+  'uid' => 7568,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7527',
+  'addtime' => 1494500157,
+)
+array (
+  'share_uid' => 7539,
+  'parent_uid' => 7539,
+  'uid' => 7569,
+  'daili_uid' => '777',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7539',
+  'addtime' => 1494502165,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7570,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494504769,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7571,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494510643,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7572,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494511004,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7573,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494511772,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7574,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494512815,
+)
+array (
+  'share_uid' => 3315,
+  'parent_uid' => 3315,
+  'uid' => 7575,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3315',
+  'addtime' => 1494513719,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7576,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494539868,
+)
+array (
+  'share_uid' => 3315,
+  'parent_uid' => 3315,
+  'uid' => 7577,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3315',
+  'addtime' => 1494543501,
+)
+array (
+  'share_uid' => 3315,
+  'parent_uid' => 3315,
+  'uid' => 7578,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3315',
+  'addtime' => 1494543673,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7579,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1494545472,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7580,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494547067,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7581,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494551027,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7582,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494552054,
+)
+array (
+  'share_uid' => 7461,
+  'parent_uid' => 7461,
+  'uid' => 7583,
+  'daili_uid' => 7461,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7461',
+  'addtime' => 1494553399,
+)
+array (
+  'share_uid' => 7257,
+  'parent_uid' => 7257,
+  'uid' => 7584,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7257',
+  'addtime' => 1494558056,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7585,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494559834,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7586,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494559930,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7587,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494562742,
+)
+array (
+  'share_uid' => 7257,
+  'parent_uid' => 7257,
+  'uid' => 7588,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7257',
+  'addtime' => 1494564375,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7589,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1494566544,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7590,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1494568236,
+)
+array (
+  'share_uid' => 571,
+  'parent_uid' => 571,
+  'uid' => 7591,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=571',
+  'addtime' => 1494583681,
+)
+array (
+  'share_uid' => 3315,
+  'parent_uid' => 3315,
+  'uid' => 7592,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3315',
+  'addtime' => 1494584293,
+)
+array (
+  'share_uid' => 7257,
+  'parent_uid' => 7257,
+  'uid' => 7593,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7257',
+  'addtime' => 1494584592,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7594,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494585764,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7595,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494590717,
+)
+array (
+  'share_uid' => 94,
+  'parent_uid' => 94,
+  'uid' => 7596,
+  'daili_uid' => 94,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=94',
+  'addtime' => 1494632466,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7597,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494636170,
+)
+array (
+  'share_uid' => 7224,
+  'parent_uid' => 7224,
+  'uid' => 7598,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7224',
+  'addtime' => 1494638932,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7599,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494645183,
+)
+array (
+  'share_uid' => 6897,
+  'parent_uid' => 6897,
+  'uid' => 7600,
+  'daili_uid' => '752',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=6897',
+  'addtime' => 1494655866,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7601,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494659075,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7602,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494659364,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7603,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494659368,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7604,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494659689,
+)
+array (
+  'share_uid' => 6999,
+  'parent_uid' => 6999,
+  'uid' => 7605,
+  'daili_uid' => 6999,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=6999',
+  'addtime' => 1494670045,
+)
+array (
+  'share_uid' => 7605,
+  'parent_uid' => 7605,
+  'uid' => 7606,
+  'daili_uid' => '6999',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7605',
+  'addtime' => 1494670609,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7607,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494672588,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7608,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494675665,
+)
+array (
+  'share_uid' => 7135,
+  'parent_uid' => 7135,
+  'uid' => 7609,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7135',
+  'addtime' => 1494677712,
+)
+array (
+  'share_uid' => 7135,
+  'parent_uid' => 7135,
+  'uid' => 7610,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7135',
+  'addtime' => 1494677860,
+)
+array (
+  'share_uid' => 7135,
+  'parent_uid' => 7135,
+  'uid' => 7611,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7135',
+  'addtime' => 1494678703,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7612,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494678918,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7613,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline',
+  'addtime' => 1494679070,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7614,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494679078,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7615,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494679138,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7616,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline',
+  'addtime' => 1494679418,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7617,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494680089,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7618,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494681715,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7619,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline',
+  'addtime' => 1494682607,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7620,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494683140,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7621,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=myerweima&from=timeline&isappinstalled=0',
+  'addtime' => 1494683393,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7622,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494721692,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7623,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494724499,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7624,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494726437,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7625,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494728249,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7626,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494729130,
+)
+array (
+  'share_uid' => 3154,
+  'parent_uid' => 3154,
+  'uid' => 7627,
+  'daili_uid' => 3154,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3154',
+  'addtime' => 1494731613,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7628,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494735673,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7629,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494751079,
+)
+array (
+  'share_uid' => 7629,
+  'parent_uid' => 7629,
+  'uid' => 7630,
+  'daili_uid' => '3238',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7629',
+  'addtime' => 1494752687,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7631,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494752874,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7632,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494753303,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7633,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494753870,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7634,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494756685,
+)
+array (
+  'share_uid' => 7477,
+  'parent_uid' => 7477,
+  'uid' => 7635,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7477',
+  'addtime' => 1494759900,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7636,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494760178,
+)
+array (
+  'share_uid' => 7084,
+  'parent_uid' => 7084,
+  'uid' => 7637,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7084',
+  'addtime' => 1494761971,
+)
+array (
+  'share_uid' => 3220,
+  'parent_uid' => 3220,
+  'uid' => 7638,
+  'daili_uid' => 3220,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3220',
+  'addtime' => 1494762262,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7639,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494763257,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7640,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494765252,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7641,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494767745,
+)
+array (
+  'share_uid' => 7477,
+  'parent_uid' => 7477,
+  'uid' => 7642,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7477',
+  'addtime' => 1494769626,
+)
+array (
+  'share_uid' => 7477,
+  'parent_uid' => 7477,
+  'uid' => 7643,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7477',
+  'addtime' => 1494771474,
+)
+array (
+  'share_uid' => 7626,
+  'parent_uid' => 7626,
+  'uid' => 7644,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7626',
+  'addtime' => 1494799384,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7645,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494805633,
+)
+array (
+  'share_uid' => 7626,
+  'parent_uid' => 7626,
+  'uid' => 7646,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7626',
+  'addtime' => 1494806691,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7647,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494815511,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7648,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494816926,
+)
+array (
+  'share_uid' => 7477,
+  'parent_uid' => 7477,
+  'uid' => 7649,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7477',
+  'addtime' => 1494817227,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7650,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494822192,
+)
+array (
+  'share_uid' => 7088,
+  'parent_uid' => 7088,
+  'uid' => 7651,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7088',
+  'addtime' => 1494822404,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7652,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1494822647,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7653,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494823971,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7654,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494823982,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7655,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494825017,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7656,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494828456,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7657,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494833458,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7658,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494833565,
+)
+array (
+  'share_uid' => 7477,
+  'parent_uid' => 7477,
+  'uid' => 7659,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7477',
+  'addtime' => 1494839130,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7660,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494839226,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7661,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494840397,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7662,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494840748,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7663,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1494843531,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7664,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494844460,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7665,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494846648,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7666,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494846706,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7667,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1494848331,
+)
+array (
+  'share_uid' => 557,
+  'parent_uid' => 557,
+  'uid' => 7668,
+  'daili_uid' => 557,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=557',
+  'addtime' => 1494851048,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7669,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494854606,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7670,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494857394,
+)
+array (
+  'share_uid' => 108,
+  'parent_uid' => 108,
+  'uid' => 7671,
+  'daili_uid' => 108,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=108',
+  'addtime' => 1494858337,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7672,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494863365,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7673,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494887288,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7674,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494893469,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7675,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494896982,
+)
+array (
+  'share_uid' => 0,
+  'parent_uid' => 0,
+  'uid' => 7676,
+  'daili_uid' => 0,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=orderlist&from=groupmessage',
+  'addtime' => 1494900529,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7677,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494901915,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7678,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494911407,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7679,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494913438,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7680,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494917960,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7681,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1494928777,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7682,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494931203,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7683,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494931517,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7684,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494931833,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7685,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494932276,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7686,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1494933028,
+)
+array (
+  'share_uid' => 4804,
+  'parent_uid' => 4804,
+  'uid' => 7687,
+  'daili_uid' => '115',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=4804',
+  'addtime' => 1494933993,
+)
+array (
+  'share_uid' => 7137,
+  'parent_uid' => 7137,
+  'uid' => 7688,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/product.php?id=164&tid=7137&from=timeline',
+  'addtime' => 1494934619,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7689,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494936685,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7690,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494937937,
+)
+array (
+  'share_uid' => 7427,
+  'parent_uid' => 7427,
+  'uid' => 7691,
+  'daili_uid' => '482',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7427',
+  'addtime' => 1494938387,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7692,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494939649,
+)
+array (
+  'share_uid' => 7681,
+  'parent_uid' => 7681,
+  'uid' => 7693,
+  'daili_uid' => '1891',
+  'url' => 'http://www.huahaizhongshen.cn/m/?tid=7681&from=timeline',
+  'addtime' => 1494939755,
+)
+array (
+  'share_uid' => 7681,
+  'parent_uid' => 7681,
+  'uid' => 7694,
+  'daili_uid' => '1891',
+  'url' => 'http://www.huahaizhongshen.cn/m/?tid=7681&from=timeline&isappinstalled=0',
+  'addtime' => 1494940886,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7695,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494940958,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7696,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494941027,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7697,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494943691,
+)
+array (
+  'share_uid' => 7071,
+  'parent_uid' => 7071,
+  'uid' => 7698,
+  'daili_uid' => 7071,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7071',
+  'addtime' => 1494945045,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7699,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1494948946,
+)
+array (
+  'share_uid' => 7681,
+  'parent_uid' => 7681,
+  'uid' => 7700,
+  'daili_uid' => '1891',
+  'url' => 'http://www.huahaizhongshen.cn/m/?tid=7681&from=timeline&isappinstalled=0',
+  'addtime' => 1494971893,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7701,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1494988651,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7702,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1494990854,
+)
+array (
+  'share_uid' => 7200,
+  'parent_uid' => 7200,
+  'uid' => 7703,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7200',
+  'addtime' => 1494992316,
+)
+array (
+  'share_uid' => 1744,
+  'parent_uid' => 1744,
+  'uid' => 7704,
+  'daili_uid' => '1294',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1744',
+  'addtime' => 1494999667,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7705,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1495001618,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7706,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1495004337,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7707,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1495004565,
+)
+array (
+  'share_uid' => 7461,
+  'parent_uid' => 7461,
+  'uid' => 7708,
+  'daili_uid' => 7461,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7461',
+  'addtime' => 1495005290,
+)
+array (
+  'share_uid' => 94,
+  'parent_uid' => 94,
+  'uid' => 7709,
+  'daili_uid' => 94,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=94',
+  'addtime' => 1495009665,
+)
+array (
+  'share_uid' => 7709,
+  'parent_uid' => 7709,
+  'uid' => 7710,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7709',
+  'addtime' => 1495009998,
+)
+array (
+  'share_uid' => 1891,
+  'parent_uid' => 1891,
+  'uid' => 7711,
+  'daili_uid' => 1891,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=1891',
+  'addtime' => 1495012076,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7712,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1495015158,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7713,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1495016499,
+)
+array (
+  'share_uid' => 7000,
+  'parent_uid' => 7000,
+  'uid' => 7714,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7000',
+  'addtime' => 1495017387,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7715,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1495018122,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7716,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495018306,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7717,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495019128,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7718,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495019966,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7719,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495022357,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7720,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1495023204,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7721,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495023492,
+)
+array (
+  'share_uid' => 7555,
+  'parent_uid' => 7555,
+  'uid' => 7722,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7555',
+  'addtime' => 1495023540,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7723,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1495023580,
+)
+array (
+  'share_uid' => 7068,
+  'parent_uid' => 7068,
+  'uid' => 7724,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7068',
+  'addtime' => 1495024181,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7725,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495024229,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7726,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495025414,
+)
+array (
+  'share_uid' => 7195,
+  'parent_uid' => 7195,
+  'uid' => 7727,
+  'daili_uid' => '7069',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7195',
+  'addtime' => 1495025701,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7728,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1495028256,
+)
+array (
+  'share_uid' => 7061,
+  'parent_uid' => 7061,
+  'uid' => 7729,
+  'daili_uid' => 7061,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7061',
+  'addtime' => 1495029374,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7730,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1495031913,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7731,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1495035032,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7732,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1495066272,
+)
+array (
+  'share_uid' => 3238,
+  'parent_uid' => 3238,
+  'uid' => 7733,
+  'daili_uid' => 3238,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3238',
+  'addtime' => 1495067202,
+)
+array (
+  'share_uid' => 3153,
+  'parent_uid' => 3153,
+  'uid' => 7734,
+  'daili_uid' => 3153,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3153',
+  'addtime' => 1495069144,
+)
+array (
+  'share_uid' => 7247,
+  'parent_uid' => 7247,
+  'uid' => 7735,
+  'daili_uid' => '94',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7247',
+  'addtime' => 1495075447,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7736,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495078520,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7737,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495078543,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7738,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495078547,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7739,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495079130,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7740,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495079297,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7741,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495081223,
+)
+array (
+  'share_uid' => 7073,
+  'parent_uid' => 7073,
+  'uid' => 7742,
+  'daili_uid' => 7073,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=7073',
+  'addtime' => 1495084209,
+)
+array (
+  'share_uid' => 3140,
+  'parent_uid' => 3140,
+  'uid' => 7743,
+  'daili_uid' => 3140,
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=3140',
+  'addtime' => 1495087315,
+)
+array (
+  'share_uid' => 724,
+  'parent_uid' => 724,
+  'uid' => 7744,
+  'daili_uid' => '145',
+  'url' => 'http://www.huahaizhongshen.cn/m/user.php?act=company_qrcode&tid=724',
+  'addtime' => 1495091766,
+)

@@ -18,20 +18,20 @@
 
 <div class="contentbox">
 <style type="text/css">
-.menu_content .tab{ display:none}
-.nav .active{
-    /*background: url(<?php echo $this->img('manage_r2_c13.jpg');?>) no-repeat;*/
+.menu_content .tab { display:none }
+.nav .active
+{
     background-color:#F5F5F5;
 } 
-.nav .other{
-    /* background: url(<?php echo $this->img('manage_r2_c14.jpg');?>) no-repeat;*/
+.nav .other
+{
     background-color:#E9E9E9;
 } 
 h2.nav{ border-bottom:1px solid #B4C9C6;font-size:13px; height:25px; line-height:25px; margin-top:0px; margin-bottom:0px}
 h2.nav a{ color:#999999; display:block; float:left; height:24px;width:113px; text-align:center; margin-right:1px; margin-left:1px; cursor:pointer}
-.addi{ margin:0px; padding:0px;}
-.vipprice td{ border-bottom:1px dotted #ccc}
-.vipprice th{ background-color:#EEF2F5}
+.addi{ margin:0px; padding:0px; }
+.vipprice td{ border-bottom:1px dotted #ccc }
+.vipprice th{ background-color: #EEF2F5 }
 </style>
 <form action="" method="post" enctype="multipart/form-data" name="theForm" id="theForm">
  <h2 class="nav">
@@ -65,8 +65,7 @@ h2.nav a{ color:#999999; display:block; float:left; height:24px;width:113px; tex
       <tr>
         <td class="label">商品单位：</td>
         <td>
-        <!--<input name="goods_brief"  value="<?php echo isset($rt['goods_brief']) ? $rt['goods_brief'] : '';?>" size="20" type="text" /> 
-        <b>商品单位：</b>--><input name="goods_unit" value="<?php echo isset($rt['goods_unit']) ? $rt['goods_unit'] : '';?>" size="20" type="text" />
+        <input name="goods_unit" value="<?php echo isset($rt['goods_unit']) ? $rt['goods_unit'] : '';?>" size="20" type="text" />
         <b>商品重量：</b><input name="goods_weight" value="<?php echo isset($rt['goods_weight']) ? $rt['goods_weight'] : '0.000';?>" size="20" type="text" /> (克)
         </td>
       </tr>
@@ -225,9 +224,18 @@ h2.nav a{ color:#999999; display:block; float:left; height:24px;width:113px; tex
             <li style="width:100px; float:left"><a style="text-decoration:underline; color:#66CC00" href="<?php echo ADMIN_URL.'weixin.php?type=userconfig';?>" target="_blank">【查看佣金比例】</a></li>
             <div style="clear:both"></div>
         </ul>
-      </td>
-      </tr>
-       <tr>
+    </td>
+    </tr>
+
+    <tr>
+        <td class="label" style="color:#FF0000">佣金次数:</td>
+        <td>
+            <input type="text" name="commission_num" id="commission_num" size="5" value="<?php echo $rt['commission_num'] ? : '1'; ?>">
+    　　佣金次数默认1次，送牛奶可以设置30，无其他需求请设置1次
+        </td>
+    </tr>
+
+    <tr>
         <td class="label">上传商品主图:</td>
         <td>
           <?php if(isset($rt['goods_img'])){ ?><img src="<?php echo !empty($rt['goods_img']) ? SITE_URL.$rt['goods_img'] : $this->img('no_picture.gif');?>" width="100" style="padding:1px; border:1px solid #ccc"/><?php } ?>

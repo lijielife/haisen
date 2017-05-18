@@ -598,6 +598,7 @@ class UserController extends Controller
         $cache->SetFunction(__FUNCTION__);
         $cache->SetMode('sitemes' . $t);
         $fn = $cache->fpath( func_get_args() );
+        $this->writeLog(__FILE__ . '|FILE_CACHE:' . $fn);
         if (file_exists($fn) && (time() - filemtime($fn) < 10000) && ! $cache->GetClose()) {} else {
             $wecha_id = $rts['wecha_id'];
             $is_subscribe = $rts['is_subscribe'];
@@ -647,6 +648,7 @@ class UserController extends Controller
                     $dd['headimgurl'] = $headimgurl;
                 if (! empty($subscribe_time))
                     $dd['subscribe_time'] = $subscribe_time;
+                $this->writeLog(__FILE__ . '|' . json_encode($json, JSON_UNESCAPED_UNICODE));
                 if (! empty($dd)) {
                     $dd['is_subscribe'] = $json->subscribe;
                     $uid = $this->Session->read('User.uid');

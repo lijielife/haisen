@@ -21,9 +21,10 @@ else
     <table cellspacing="2" cellpadding="5" width="100%">
     <tr>
         <th colspan="7" align="left">订单列表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        选择时间：<input type="text" id="EntTime1" name="EntTime1" onclick="return showCalendar('EntTime1', 'y-mm-dd');"  />
-        至
+        选择时间：<input type="text" id="EntTime1" name="EntTime1" onclick="return showCalendar('EntTime1', 'y-mm-dd');" /> 至
         <input type="text" id="EntTime2" name="EntTime2" onclick="return showCalendar('EntTime2', 'y-mm-dd');"  />
+        联系电话：<input name="mobile" size="15" type="text" value="<?php echo $_GET['mobile'] ? : ''; ?>">
+        地址：<input name="address" size="15" type="text" value="<?php echo $_GET['address'] ? : ''; ?>">
         </th>
     </tr>
     <tr><th colspan="7" align="left">
@@ -62,13 +63,14 @@ else
         ?>  
          <select name="status" >
          <!--2:确认订单 0:没支付 0:没发货-->
-            <?php 
-            $se = 'selected="selected"';
-            foreach($status_option as $k=>$var){
-                echo '<option value="'.$k.'" '.($k==$_GET['status']&&isset($_GET['status']) ? $se : "").'>'.$var.'</option>';
-            }
-            ?>
-          </select>
+        <?php 
+        $se = 'selected="selected"';
+        foreach ( $status_option as $k => $var )
+        {
+            echo '<option value="'.$k.'" '.($k==$_GET['status']&&isset($_GET['status']) ? $se : "").'>'.$var.'</option>';
+        }
+        ?>
+        </select>
         <input value=" 搜索 " class="order_search" type="button">
         <a href="goods_order.php?type=list&status=11">待确认</a>
         <a href="goods_order.php?type=list&status=200">待付款</a>
@@ -81,21 +83,25 @@ else
        <th><a href="<?php echo $own;?>">[微信]收货人</a></th>
        <th><a href="<?php echo $tprice;?>">总金额</a></th>
        <th>订单状态</th>
+       <th>联系电话</th>
+       <th>收货地址</th>
        <th>商家名称</th>
        <th>操作</th>
     </tr>
     <?php 
-    if(!empty($orderlist)){ 
-    foreach($orderlist as $row){
+        if ( ! empty( $orderlist ) ) { 
+        foreach ( $orderlist as $row ) {
     ?>
     <tr>
     <td><input type="checkbox" name="quanxuan" value="<?php echo $row['order_id'];?>" class="gids"/></td>
-    <td><?php echo $row['order_sn'];?></td>
-    <td><?php echo $row['add_time'];?></td>
+    <td><?php echo $row['order_sn']; ?></td>
+    <td><?php echo $row['add_time']; ?></td>
     <td><font color="#FF0000">[<?php echo $row['nickname'] ? : '未关注'; ?>]</font><?php echo $row['consignee'];?></td>
-    <td><?php echo $row['tprice'];?></td>
-    <td><?php echo $row['status'];echo !empty($row['sn_id']) ? '&nbsp;<font color=blue>&nbsp;['.$row['shoppingname'].']物流单:<a style="color:#fe0000" href="http://m.kuaidi100.com/index_all.html?type='.$row['shipping_code'].'&postid='.$row['sn_id'].'" target="_blank">'.$row['sn_id'].'</a></font>' : '';?></td>
-    <td><?php echo $row['store_name'];?></td>
+    <td><?php echo $row['tprice']; ?></td>
+    <td><?php echo $row['status']; echo ! empty( $row['sn_id'] ) ? '&nbsp;<font color=blue>&nbsp;['.$row['shoppingname'].']物流单:<a style="color:#fe0000" href="http://m.kuaidi100.com/index_all.html?type='.$row['shipping_code'].'&postid='.$row['sn_id'].'" target="_blank">'.$row['sn_id'].'</a></font>' : '';?></td>
+    <td><?php echo $row['mobile']; ?></td>
+    <td><?php echo $row['address']; ?></td>
+    <td><?php echo $row['store_name']; ?></td>
     <td>
     <a href="goods_order.php?type=order_info&id=<?php echo $row['order_id'];?>" title="编辑"><img src="<?php echo $this->img('icon_view.gif');?>" title="编辑"/></a>&nbsp;
     <?php if(in_array($row['order_status'],array('1','4'))){?><img src="<?php echo $this->img('icon_drop.gif');?>" title="删除" alt="删除" id="<?php echo $row['order_id'];?>" class="delorder"/><?php } ?>
@@ -219,36 +225,31 @@ else
     });
     
     //sous
-    $('.order_search').click(function(){
-        
+    $('.order_search').click( function() {
         time1    = $('input[name="EntTime1"]').val();  //look 添加
-        
         time2    = $('input[name="EntTime2"]').val();   //look 添加
-        
         o_sn     = $('input[name="order_sn"]').val();
-        
         own      = $('input[name="consignee"]').val();
-        
         sts      = $('select[name="status"]').val();
-        
         store_id = $('select[name="store_id"]').val();
-
         wallet_id = $('select[name="wallet_id"]').val();
-        
-        location.href='<?php echo $thisurl;?>?type=list&add_time1='+time1+'&add_time2='+time2+'&order_sn='+o_sn+'&consignee='+own+'&store_id='+ store_id+'&wallet_id='+ wallet_id +'&status='+sts;
+        mobile = $('input[name="mobile"]').val();
+        address = $('input[name="address"]').val();
+
+        location.href = '<?php echo $thisurl; ?>?type=list&add_time1='+time1+'&add_time2='+time2+'&order_sn='+o_sn+'&consignee='+own+'&store_id='+ store_id+'&wallet_id='+ wallet_id +'&status='+sts+'&mobile='+mobile+'&address='+address;
     });
     
-    
     //打印订单
-    function printorder(){
-        if(confirm("你确定打印吗？点击按钮之后将会更改为已打印状态！")){
+    function printorder()
+    {
+        if(confirm("你确定打印吗？点击按钮之后将会更改为已打印状态！"))
+        {
             var arr = [];
             $('input[name="quanxuan"]:checked').each(function(){
                 arr.push($(this).val());
             });
-            var str=arr.join('-');
-            //window.location.href = '<?php echo ADMIN_URL;?>goods_order.php?type=orderprint&ids='+str;
-            window.open('<?php echo ADMIN_URL;?>goods_order.php?type=orderprint&ids='+str);
+            var str = arr.join('-');
+            window.open('<?php echo ADMIN_URL; ?>goods_order.php?type=orderprint&ids='+str);
         }
         return false;
     }

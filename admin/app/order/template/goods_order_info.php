@@ -1,11 +1,13 @@
 <div class="contentbox">
 <style type="text/css">
-.order_basic table td{ border:1px solid #F4F6F1; }
-.order_basic td p{background:#F5F7F2; text-align:center; line-height:25px; font-size:13px; font-weight:bold; margin-bottom:0px; margin-top:0px}
+.order_basic table td { border:1px solid #F4F6F1; }
+.order_basic td p {background:#F5F7F2; text-align:center; line-height:25px; font-size:13px; font-weight:bold; margin-bottom:0px; margin-top:0px}
+.postscript-btn { margin-top: 10px; }
+.postscript-tips { color: #008000; display: none; }
 </style>
 <div class="openwindow"><img src="<?php echo $this->img('loading.gif');?>"  align="absmiddle"/><br />正在操作，请稍后。。。</div>
 <table cellspacing="2" cellpadding="5" width="100%" class="order_basic">
-     <tr>
+    <tr>
         <th align="left">订单详情列表</th>
     </tr>
     <tr>
@@ -35,16 +37,22 @@
                 <td width="35%"><?php echo !empty($rt['orderinfo']['shipping_time']) ? date('Y-m-d H:i:s',$rt['orderinfo']['shipping_time']) : '未知';?></td>
             </tr>
             <tr>
-                <td class="label" width="15%">电子邮件：</td>
-                <td width="35%"><?php echo $rt['userinfo']['email'];?></td>
+                <td class="label" width="15%">佣金剩余次数：</td>
+                <td width="35%">
+                    <span id="commission_surplus"><?php echo $rt['orderinfo']['commission_surplus']; ?></span>次
+                </td>
                 <td class="label" width="15%">发货时间：</td>
                 <td width="35%"><?php echo !empty($rt['orderinfo']['shipping_time']) ? date('Y-m-d H:i:s',$rt['orderinfo']['shipping_time']) : '未知';?></td>
             </tr>
             <tr> 
                 <td class="label" width="15%">订单附言：</td>
-                <td ><?php echo $rt['orderinfo']['postscript'];?></td>
+                <td>
+                    <textarea id="postscript" cols="40" rows="6"><?php echo $rt['orderinfo']['postscript']; ?></textarea><br />
+                    <input type="button" id="postscript_btn" class="postscript-btn" value="推送分佣" />
+                    <span id="postscript_tips" class="postscript-tips">操作成功</span>
+                </td>
                 <td class="label" width="15%">缺货说明：</td>
-                <td ><?php echo $rt['orderinfo']['how_oos'];?></td>
+                <td><?php echo $rt['orderinfo']['how_oos'];?></td>
             </tr>
             <tr> 
                 <td class="label" width="15%">邮费：</td>
@@ -65,22 +73,21 @@
         <table cellspacing="0" cellpadding="0" width="100%" class="order_basic">
             <tr>
                 <td class="label" width="15%">收货人：</td>
-                <td width="35%"><a href="user.php?type=userress&id=<?php echo $rt['orderinfo']['user_id'];?>" style="color:#FE0000" title="查看详情"><?php echo $rt['orderinfo']['consignee'];?></a><em>[点击可进入收货人详情]</em></td>
-                
+                <td width="35%"><a href="user.php?type=userress&id=<?php echo $rt['orderinfo']['user_id']; ?>" style="color:#FE0000" title="查看详情"><?php echo $rt['orderinfo']['consignee']; ?></a><em>[点击可进入收货人详情]</em></td>
                 <td class="label" width="15%">配送方式：</td>
-                <td width="35%"><?php echo $rt['orderinfo']['shipping_name'];?></td>
+                <td width="35%"><?php echo $rt['orderinfo']['shipping_name']; ?></td>
             </tr>
             <tr>
                 <td class="label" width="15%"><?php echo $rt['orderinfo']['shipping_id']=='6' ? '提货店址' : '收货地址';?>：</td>
                 <td width="35%"><?php echo $rt['orderinfo']['province'].' '.$rt['orderinfo']['city'].' '.$rt['orderinfo']['district'].' '.$rt['orderinfo']['town'].' '.$rt['orderinfo']['village'].' '.($rt['orderinfo']['shipping_id']=='6' ? $rt['orderinfo']['user_name'] : $rt['orderinfo']['address']);?></td>
                 <td class="label" width="15%">邮编：</td>
-                <td width="35%"><?php echo $rt['orderinfo']['zipcode'];?></td>
+                <td width="35%"><?php echo $rt['orderinfo']['zipcode']; ?></td>
             </tr>
             <tr>
                 <td class="label" width="15%">电话|手机：</td>
-                <td width="35%"><?php echo $rt['orderinfo']['tel'];?>|<?php echo $rt['orderinfo']['mobile'];?></td>
+                <td width="35%"><?php echo $rt['orderinfo']['tel']; ?>|<?php echo $rt['orderinfo']['mobile']; ?></td>
                 <td class="label" width="15%">要求送货时间：</td>
-                <td width="35%"><?php echo !empty($rt['orderinfo']['best_time']) ? $rt['orderinfo']['best_time'] : '无说明';?></td>
+                <td width="35%"><?php echo ! empty($rt['orderinfo']['best_time']) ? $rt['orderinfo']['best_time'] : '无说明'; ?></td>
             </tr>
         </table>
         </td>
@@ -94,13 +101,13 @@
         <td>
         <table cellspacing="0" cellpadding="0" width="100%" >
             <tr align="center" >
-                <td ><strong>商品条形码</strong></td>
-                <td ><strong>商品名称[品牌]</strong></td>
-                <td ><strong>规格</strong></td>
-                <td ><strong>单位</strong></td>
+                <td><strong>商品条形码</strong></td>
+                <td><strong>商品名称[品牌]</strong></td>
+                <td><strong>规格</strong></td>
+                <td><strong>单位</strong></td>
                 <td><strong>数量</strong></td>
-                <td ><strong>单价</strong></td>
-                <td ><strong>库存</strong></td>
+                <td><strong>单价</strong></td>
+                <td><strong>库存</strong></td>
                 <td><strong>金额</strong></td>
                 <td><strong>商家名称</strong></td>
             </tr>
@@ -192,4 +199,22 @@ $('.order_action').live( 'click', function() {
         removewindow();
     });
 });
+
+/* 订单附言 更新操作 */
+$( '#postscript_btn' ).live( 'click', function() {
+    var url = '<?php echo $thisurl; ?>';
+    var id  = '<?php echo $_GET['id']; ?>';
+    var postscript = $( '#postscript' ).val();
+    var data = { action:'ajax_up_postscript', order_id:id, postscript: postscript }
+    $.post( url, data, function ( res ) {
+        if ( res == 'true' )
+        {
+            /* TODO 成功 */
+            var surplus = $( '#commission_surplus' ).html();
+            if ( surplus <= 0 ) { return; }
+            $( '#commission_surplus' ).html( surplus*1 - 1 );
+            $( '#postscript_tips' ).show();
+        }
+    } );
+} );
 </script>
