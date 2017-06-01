@@ -827,7 +827,7 @@ class OrderController extends Controller
         $rts = $this->App->findrow( $sql );
         // 开启收货返佣选项
         $field = 'user_id,parent_uid,parent_uid2,parent_uid3,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,commission_num,commission_surplus';
-        $sql   = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
+        $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
         if ( 
@@ -934,6 +934,8 @@ class OrderController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid, $moeys );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid );
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -985,6 +987,8 @@ class OrderController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid2, $moeys );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid2 );
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid2, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -1039,6 +1043,8 @@ class OrderController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid3, $moeys );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid3 );
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid3, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -1092,6 +1098,8 @@ class OrderController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid4, $moeys );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid4 );
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid4, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -1144,6 +1152,17 @@ class OrderController extends Controller
             'wallet_id' => $wallet_id,
             'uid' => $parent_uid 
         ) );
+    }
+
+    /**
+     * 减少money_change_cache.money
+     */
+    private function _decr_money_change_cache( $money, $order_sn, $uid )
+    {
+        $sql = "UPDATE `{$this->App->prefix()}user_money_change_cache` 
+        SET money = money - {$money} 
+        WHERE order_sn = '{$order_sn}' AND uid = '{$uid}'";
+        $this->App->query( $sql );
     }
     
     /**

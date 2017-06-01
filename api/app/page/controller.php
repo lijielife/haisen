@@ -249,7 +249,7 @@ class PageController extends Controller{
             } elseif ('subscribe' == $data['Event']) { //关注后
                 /***********************************************/
                 $wecha_id = $data['FromUserName']; //用户openid
-                
+                $this->writeLog(__FILE__ . '|' . $wecha_id); 
                 $sql = "SELECT user_id FROM `{$this->App->prefix()}user` WHERE wecha_id='$wecha_id' LIMIT 1";
                 $thisuid = $this->App->findvar($sql);
                 if(!($thisuid>0)){  //第一次进来         

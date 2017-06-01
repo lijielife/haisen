@@ -379,7 +379,7 @@ class DailiController extends Controller
         $uid = $this->Session->read('User.uid');
         if ( ! defined( NAVNAME ) ) define( 'NAVNAME', '我的佣金' );
 
-        // 未收货订单  shipping_status = 2 是未收货的
+        // 未收货分销订单  shipping_status = 2 是未收货的
         $sql = "SELECT
                     SUM(tb1.money)
                 FROM
@@ -395,9 +395,13 @@ class DailiController extends Controller
                 LIMIT 1";
         $rt['not_received'] = $this->App->findvar( $sql );
 
-        // 已经收货订单佣金
+        // 已收货分销订单
         $sql = "SELECT SUM(tb1.money) FROM `{$this->App->prefix()}user_money_change` AS tb1 LEFT JOIN `{$this->App->prefix()}goods_order_info` AS tb2 ON tb2.order_sn = tb1.order_sn WHERE tb1.uid = '$uid' AND tb2.shipping_status='5' AND tb1.money > 0 LIMIT 1";
         $rt['pay3'] = $this->App->findvar( $sql );
+        /* 增长金额（多次分佣建立在未收货的基础上，所以配合goods_order_info.shipping_status = 2使用） */
+        $sql = "SELECT SUM(tb1.money) FROM `{$this->App->prefix()}user_money_change` AS tb1 LEFT JOIN `{$this->App->prefix()}goods_order_info` AS tb2 ON tb2.order_sn = tb1.order_sn WHERE tb1.uid = '$uid' AND tb2.shipping_status='2' AND tb1.money > 0 LIMIT 1";
+        $incr_pay3 = $this->App->findvar( $sql );
+        $rt['pay3'] += $incr_pay3;
         
         /* 未收货团购订单 */
         $sql = "SELECT
@@ -648,7 +652,7 @@ class DailiController extends Controller
                 return "tb2.pay_status='1'";
                 break;
             case 'shouhuo':
-                return "tb2.shipping_status='5'";
+                return "( tb2.shipping_status = '5' OR  tb2.shipping_status = '2' )";
                 break;
             /* 已收货团购订单 */
             case 'received_group':
@@ -664,7 +668,24 @@ class DailiController extends Controller
                 return "";
                 break;
         }
-     }
+    }
+
+    /**
+     * 返回佣金明细表名
+     */
+    public function _return_moneydata_table( $status = '' )
+    {
+        switch ( $status )
+        {
+            case 'shouhuo':
+                return 'user_money_change';
+            break;
+
+            default :
+                return 'user_money_change_cache';
+            break;
+        }
+    }
       
     /**
      * 佣金明细
@@ -693,20 +714,19 @@ class DailiController extends Controller
         $start = ($page-1)*$list;
         $tt = $this->App->findvar("SELECT COUNT(tb1.cid) FROM `{$this->App->prefix()}user_money_change_cache` AS tb1 LEFT JOIN `{$this->App->prefix()}goods_order_info` AS tb2 ON tb2.order_sn = tb1.order_sn $w");
         $rt['pages'] = Import::basic()->getpage($tt,$list,$page,'?page=',true);
-        
+        /* 获取表名 */
+        $mymoneydata_table = $this->_return_moneydata_table( $status );
         $sql = "SELECT
                     tb1.*, tb3.nickname,
                     tb3.headimgurl
                 FROM
-                    `{$this->App->prefix()}user_money_change_cache` AS tb1
+                    `{$this->App->prefix()}{$mymoneydata_table}` AS tb1
                 LEFT JOIN `{$this->App->prefix()}goods_order_info` AS tb2 ON tb2.order_sn = tb1.order_sn
                 LEFT JOIN `{$this->App->prefix()}user` AS tb3 ON tb1.buyuid = tb3.user_id $w
                 ORDER BY
                     tb1.time DESC
-                LIMIT $start,
-                 $list";
-
-        $rt['lists'] = $this->App->find($sql); //商品列表
+                LIMIT $start, $list";
+        $rt['lists'] = $this->App->find( $sql ); //商品列表
         $rt['page'] = $page;
         
         if ( !defined( NAVNAME ) ) define( 'NAVNAME', "佣金明细" );

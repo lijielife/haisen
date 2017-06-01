@@ -1,0 +1,249 @@
+time: 2017-06-01 00:06:24|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='7275' LIMIT 1
+time: 2017-06-01 00:06:28|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7275| 1 level | money:21.6|ticheng:0.36|rank:12|parent_id:7000
+time: 2017-06-01 00:06:28|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7275| 2 level | money:14.4|ticheng:0.24|rank:12|parent_id:6999
+time: 2017-06-01 00:06:28|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7275| 3 level | money:12|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 03:45:01|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 03:45:28|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 03:47:32|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 03:48:07|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 05:22:48|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 05:24:13|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 05:24:39|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:24:50|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:24:57|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:25:09|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:25:57|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:26:00|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:26:18|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:26:36|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:26:42|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:26:46|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:26:51|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:27:29|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:28:03|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:28:06|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:28:15|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:28:38|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:28:49|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:30:36|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 05:34:51|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 05:47:37|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 05:50:15|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 05:57:16|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 06:01:48|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 06:01:55|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 06:02:28|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 06:07:51|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 06:07:53|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:06:31|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8043' LIMIT 1
+time: 2017-06-01 07:08:05|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8043| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:7610
+time: 2017-06-01 07:08:05|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8043| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:7135
+time: 2017-06-01 07:08:05|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8043| 3 level | money:6|ticheng:0.2|rank:12|parent_id:5932
+time: 2017-06-01 07:08:05|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8043| 4 level | money:6|ticheng:0.2|rank:12|parent_id:6999
+time: 2017-06-01 07:39:13|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:39:19|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:39:37|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:39:39|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:39:39|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:39:39|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 07:42:39|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 08:27:42|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 08:27:55|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 09:02:17|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 09:02:18|/wwwroot/custom_fenxiao/m/app/user/controller.php|{"subscribe":1,"openid":"ofg0VwXLVz9kW8b_Z9CB0YCD1v7c","nickname":"周晓燕","sex":2,"language":"zh_CN","city":"","province":"","country":"安道尔","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/wR1Je31EiasMicR5x9by6TaIzuibYQtOsworwKLSNN4ibj7W7Q2yDUUDy5C2O9QaQfxbtVK5DmOWpdyy4u9F6d9fcS7rYLPwibHH2\/0","subscribe_time":1474545525,"remark":"","groupid":0,"tagid_list":[]}
+time: 2017-06-01 09:02:43|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='3053' LIMIT 1
+time: 2017-06-01 09:02:54|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:3053| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:1891
+time: 2017-06-01 09:02:54|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:3053| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:312
+time: 2017-06-01 09:02:54|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:3053| 3 level | money:6|ticheng:0.2|rank:12|parent_id:242
+time: 2017-06-01 09:02:54|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:3053| 4 level | money:6|ticheng:0.2|rank:12|parent_id:238
+time: 2017-06-01 09:08:55|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8290' LIMIT 1
+time: 2017-06-01 09:11:03|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8290| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:102
+time: 2017-06-01 09:12:28|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 09:13:50|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 09:22:56|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 09:23:23|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 09:24:21|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 6774, p3_uid=0 where id in ()
+time: 2017-06-01 09:24:21|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=6774 where id in ()
+time: 2017-06-01 09:26:14|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 104, p3_uid=103 where id in ()
+time: 2017-06-01 09:26:14|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=104 where id in ()
+time: 2017-06-01 09:27:04|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 6774, p3_uid=0 where id in ()
+time: 2017-06-01 09:27:04|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=6774 where id in ()
+time: 2017-06-01 09:29:28|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 6774, p3_uid=0 where id in ()
+time: 2017-06-01 09:29:28|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=6774 where id in ()
+time: 2017-06-01 09:32:29|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='7957' LIMIT 1
+time: 2017-06-01 09:32:59|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8267' LIMIT 1
+time: 2017-06-01 09:36:07|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7957| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:7084
+time: 2017-06-01 09:36:07|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7957| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:7069
+time: 2017-06-01 09:36:07|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7957| 3 level | money:6|ticheng:0.2|rank:12|parent_id:7051
+time: 2017-06-01 09:36:07|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7957| 4 level | money:6|ticheng:0.2|rank:12|parent_id:5932
+time: 2017-06-01 09:36:50|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='7957' LIMIT 1
+time: 2017-06-01 09:39:16|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 104, p3_uid=103 where id in ()
+time: 2017-06-01 09:39:16|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=104 where id in ()
+time: 2017-06-01 10:07:09|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:07:49|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:07:49|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:07:49|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:07:49|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:07:51|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:08:17|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:08:17|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:09:19|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:09:36|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8298' LIMIT 1
+time: 2017-06-01 10:10:50|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8299' LIMIT 1
+time: 2017-06-01 10:12:13|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8299| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:8267
+time: 2017-06-01 10:12:13|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8299| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:4322
+time: 2017-06-01 10:12:13|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8299| 3 level | money:0|ticheng:0|rank:12|parent_id:3280
+time: 2017-06-01 10:12:13|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8299| 4 level | money:6|ticheng:0.2|rank:12|parent_id:1891
+time: 2017-06-01 10:13:31|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:13:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8298| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:8135
+time: 2017-06-01 10:13:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8298| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:744
+time: 2017-06-01 10:13:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8298| 3 level | money:0|ticheng:0|rank:12|parent_id:118
+time: 2017-06-01 10:14:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:1598| 1 level | money:0.04|ticheng:0.36|rank:12|parent_id:1295
+time: 2017-06-01 10:14:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:1598| 2 level | money:0.02|ticheng:0.24|rank:12|parent_id:1294
+time: 2017-06-01 10:14:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:1598| 3 level | money:0|ticheng:0|rank:12|parent_id:736
+time: 2017-06-01 10:14:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:1598| 4 level | money:0.02|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 10:14:06|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 7051, p3_uid=5932 where id in ()
+time: 2017-06-01 10:14:06|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=7051 where id in ()
+time: 2017-06-01 10:14:09|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7108| 1 level | money:0.04|ticheng:0.36|rank:12|parent_id:7051
+time: 2017-06-01 10:14:09|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7108| 2 level | money:0.02|ticheng:0.24|rank:12|parent_id:5932
+time: 2017-06-01 10:14:09|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7108| 3 level | money:0|ticheng:0|rank:12|parent_id:6999
+time: 2017-06-01 10:14:09|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7108| 4 level | money:0.02|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 10:22:52|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:39:01|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:51:22|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:54:18|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 10:54:30|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 10:54:55|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 10:55:03|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 10:55:45|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 10:58:18|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:58:28|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:58:37|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:58:51|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 10:59:50|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='6855' LIMIT 1
+time: 2017-06-01 11:00:46|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 11:01:16|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:01:35|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:02:11|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:06:14|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 11:09:03|/wwwroot/custom_fenxiao/m/app/product/controller.phpSELECT is_subscribe FROM `gz_user` WHERE user_id='8147' LIMIT 1
+time: 2017-06-01 11:19:54|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:19:54|/wwwroot/custom_fenxiao/m/app/user/controller.php|{"subscribe":1,"openid":"ofg0VwfEXWxGeyrj5yCrqlM6uTiw","nickname":"平安是福","sex":2,"language":"zh_CN","city":"","province":"","country":"阿尔及利亚","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/7w6NfWMePbStZOpNJwdVG0ibJMJefoFibvictGictuSribSUnlhibicDQiah5lOQ1UyDX1gQZTX6zRotiasrsflDF3UdUD4K06vic6U59Q\/0","subscribe_time":1496268088,"remark":"","groupid":0,"tagid_list":[]}
+time: 2017-06-01 11:26:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7137| 1 level | money:0.036|ticheng:0.36|rank:12|parent_id:7051
+time: 2017-06-01 11:26:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7137| 2 level | money:0.024|ticheng:0.24|rank:12|parent_id:5932
+time: 2017-06-01 11:26:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7137| 3 level | money:0|ticheng:0|rank:12|parent_id:6999
+time: 2017-06-01 11:26:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:7137| 4 level | money:0.02|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 11:27:39|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:27:44|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:27:47|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8147| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:8143
+time: 2017-06-01 11:27:47|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8147| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:744
+time: 2017-06-01 11:27:47|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8147| 3 level | money:0|ticheng:0|rank:12|parent_id:118
+time: 2017-06-01 11:27:48|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:35:28|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 7051, p3_uid=5932 where id in ()
+time: 2017-06-01 11:35:28|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=7051 where id in ()
+time: 2017-06-01 11:35:30|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7137| 1 level | money:0.04|ticheng:0.36|rank:12|parent_id:7051
+time: 2017-06-01 11:35:30|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7137| 2 level | money:0.02|ticheng:0.24|rank:12|parent_id:5932
+time: 2017-06-01 11:35:30|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7137| 3 level | money:0|ticheng:0|rank:12|parent_id:6999
+time: 2017-06-01 11:35:30|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7137| 4 level | money:0.02|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 11:36:08|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:36:13|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:36:22|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:37:59|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:42:07|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:42:36|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8162| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:8123
+time: 2017-06-01 11:42:36|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8162| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:94
+time: 2017-06-01 11:43:23|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:44:39|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:44:45|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:48:00|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:48:38|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 11:52:48|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 12:22:26|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8282| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:7108
+time: 2017-06-01 12:22:26|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8282| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:7051
+time: 2017-06-01 12:22:26|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8282| 3 level | money:6|ticheng:0.2|rank:12|parent_id:5932
+time: 2017-06-01 12:22:26|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8282| 4 level | money:6|ticheng:0.2|rank:12|parent_id:6999
+time: 2017-06-01 12:47:37|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 12:47:37|/wwwroot/custom_fenxiao/m/app/user/controller.php|{"subscribe":1,"openid":"ofg0VwV-A18nTJZUV0fpZAGYJ6-Q","nickname":"淡定人生(华海众参微商平台)","sex":0,"language":"zh_CN","city":"","province":"","country":"","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/HaQZliaYtok6Rh6PFQvIgkZWbgUuY9KXjxBZsqwdttrbRhic3ynHqicJjgfu8IlQmec4cGcrq4WBWct8s0mAQSAON1pfCyfyia7T\/0","subscribe_time":1467959645,"remark":"","groupid":0,"tagid_list":[]}
+time: 2017-06-01 12:49:03|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 12:49:05|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 12:49:28|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 12:52:50|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 12:52:56|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 14:04:16|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 14:04:26|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 14:29:23|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 14:29:38|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 14:47:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8147| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:8143
+time: 2017-06-01 14:47:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8147| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:744
+time: 2017-06-01 14:47:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8147| 3 level | money:0|ticheng:0|rank:12|parent_id:118
+time: 2017-06-01 14:48:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8299| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:8267
+time: 2017-06-01 14:48:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8299| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:4322
+time: 2017-06-01 14:48:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8299| 3 level | money:0|ticheng:0|rank:12|parent_id:3280
+time: 2017-06-01 14:48:41|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8299| 4 level | money:0.20|ticheng:0.2|rank:12|parent_id:1891
+time: 2017-06-01 14:49:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8290| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:102
+time: 2017-06-01 14:49:49|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8275| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:6999
+time: 2017-06-01 14:49:49|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8275| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:94
+time: 2017-06-01 14:52:22|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8135| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:744
+time: 2017-06-01 14:52:22|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8135| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:118
+time: 2017-06-01 14:53:28|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8267| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:4322
+time: 2017-06-01 14:53:28|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8267| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:3280
+time: 2017-06-01 14:53:28|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8267| 3 level | money:0.20|ticheng:0.2|rank:12|parent_id:1891
+time: 2017-06-01 14:53:28|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8267| 4 level | money:0.20|ticheng:0.2|rank:12|parent_id:312
+time: 2017-06-01 14:57:09|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 14:58:21|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 15:08:13|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 15:09:15|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 15:26:56|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 15:49:42|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 8090, p3_uid=7919 where id in ()
+time: 2017-06-01 15:49:42|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=8090 where id in ()
+time: 2017-06-01 17:03:58|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:03:59|/wwwroot/custom_fenxiao/m/app/user/controller.php|{"subscribe":1,"openid":"ofg0VwV-A18nTJZUV0fpZAGYJ6-Q","nickname":"淡定人生(华海众参微商平台)","sex":0,"language":"zh_CN","city":"","province":"","country":"","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/HaQZliaYtok6Rh6PFQvIgkZWbgUuY9KXjxBZsqwdttrbRhic3ynHqicJjgfu8IlQmec4cGcrq4WBWct8s0mAQSAON1pfCyfyia7T\/0","subscribe_time":1467959645,"remark":"","groupid":0,"tagid_list":[]}
+time: 2017-06-01 17:04:45|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:05:23|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:07:44|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:07:58|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:15:12|update is sucess:| update sql:update `gz_user_tuijian_fx` set p2_uid = 8123, p3_uid=94 where id in ()
+time: 2017-06-01 17:15:12|update is sucess2:| update sql:update `gz_user_tuijian_fx` set p3_uid=8123 where id in ()
+time: 2017-06-01 17:26:42|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8171| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:8123
+time: 2017-06-01 17:26:42|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8171| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:94
+time: 2017-06-01 17:27:07|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8171| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:8123
+time: 2017-06-01 17:27:07|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8171| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:94
+time: 2017-06-01 17:27:34|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8147| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:8143
+time: 2017-06-01 17:27:34|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8147| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:744
+time: 2017-06-01 17:27:34|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:8147| 3 level | money:0|ticheng:0|rank:12|parent_id:118
+time: 2017-06-01 17:28:44|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7793| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:7135
+time: 2017-06-01 17:28:44|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7793| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:5932
+time: 2017-06-01 17:28:44|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7793| 3 level | money:0|ticheng:0|rank:12|parent_id:6999
+time: 2017-06-01 17:28:44|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:7793| 4 level | money:0.20|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 17:32:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:91| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:92
+time: 2017-06-01 17:32:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:91| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:1542
+time: 2017-06-01 17:32:50|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:91| 3 level | money:6|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 17:33:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:91| 1 level | money:0.36|ticheng:0.36|rank:12|parent_id:92
+time: 2017-06-01 17:33:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:91| 2 level | money:0.24|ticheng:0.24|rank:12|parent_id:1542
+time: 2017-06-01 17:33:00|/wwwroot/custom_fenxiao/admin/app/order/controller.php|uid:91| 3 level | money:0.20|ticheng:0.2|rank:12|parent_id:94
+time: 2017-06-01 17:47:46|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:47:48|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 17:47:52|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:31:05|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:31:17|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:33:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:1085| 1 level | money:1.44|ticheng:0.36|rank:12|parent_id:804
+time: 2017-06-01 18:33:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:1085| 2 level | money:0.96|ticheng:0.24|rank:12|parent_id:777
+time: 2017-06-01 18:33:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:1085| 3 level | money:0.8|ticheng:0.2|rank:12|parent_id:744
+time: 2017-06-01 18:33:57|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:1085| 4 level | money:0.8|ticheng:0.2|rank:12|parent_id:118
+time: 2017-06-01 18:36:13|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:36:23|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:37:33|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:51:36|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8098| 1 level | money:10.8|ticheng:0.36|rank:12|parent_id:744
+time: 2017-06-01 18:51:36|/wwwroot/custom_fenxiao/m/app/shopping/controller.php|2|uid:8098| 2 level | money:7.2|ticheng:0.24|rank:12|parent_id:118
+time: 2017-06-01 18:55:21|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:56:35|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:56:48|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 18:56:49|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:02:28|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:03:03|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:05:20|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:06:13|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:07:06|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:07:15|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:07:22|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php
+time: 2017-06-01 19:08:45|/wwwroot/custom_fenxiao/m/app/user/controller.php|FILE_CACHE:/wwwroot/custom_fenxiao/cache/sitemeswwwhuahaizhongshen/_get_weixin_user_info/3434.php

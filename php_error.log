@@ -1,0 +1,2 @@
+[18-May-2017 18:45:58 PRC] PHP Fatal error:  Call to undefined function fastcgi_finish_request() in /wwwroot/custom_fenxiao/test.php on line 3
+[18-May-2017 18:46:42 PRC] PHP Fatal error:  Call to undefined function fastcgi_finish_request() in /wwwroot/custom_fenxiao/test.php on line 3

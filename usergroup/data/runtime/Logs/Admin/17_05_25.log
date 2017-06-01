@@ -1,0 +1,48 @@
+[ 2017-05-25T11:17:07+08:00 ] 123.234.158.67 /usergroup/index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.047968s ]
+INFO: [ app_init ] --END-- [ RunTime:0.050725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002073s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007559s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: admin_username /wwwroot/custom_fenxiao/usergroup/data/runtime/Cache/Admin/17c864e00f937e6528a86826c496ba3b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.001390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2017-05-25T11:53:50+08:00 ] 111.206.36.15 /usergroup/index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: admin_username /wwwroot/custom_fenxiao/usergroup/data/runtime/Cache/Admin/17c864e00f937e6528a86826c496ba3b.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
