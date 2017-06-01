@@ -597,7 +597,9 @@ class OrderController extends Controller
             if ( $uid > 0 )
             {
                 $rank = $this->App->findvar( "SELECT user_rank FROM `{$this->App->prefix()}user` WHERE user_id = '$uid' LIMIT 1" );
-                if ( $rank == '1' && $pu['store_id'] == 0 )
+                //修改为不论购买什么商品，都开通分销中心 by niripsa
+                // if ( $rank == '1' && $pu['store_id'] == 0 )
+                if ( $rank == '1')
                 {
                     $this->App->update( 'user', array(
                          'user_rank' => '12' 
