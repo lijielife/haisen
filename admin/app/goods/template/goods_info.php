@@ -235,6 +235,30 @@ h2.nav a{ color:#999999; display:block; float:left; height:24px;width:113px; tex
         </td>
     </tr>
 
+      <td class="label" style="color:#FF0000">分红:</td>
+      <td align="left" style="color:#FF0000">
+        <ul class="ajaxshowmoney">
+            <li style="width:180px; float:left; position:relative; padding-bottom:5px; background:url(<?php echo $this->img('direc.gif');?>) 115px bottom no-repeat">
+                <b>普通分销分红:</b>
+                <input name="fenhong1" id="fenhong1" type="text" size="8" value="<?php echo isset($rt['fenhong1']) ? $rt['fenhong1'] : '0.00';?>">元
+                <div style="height:90px; width:400px; position:absolute; top:25px; left:42px; z-index:99; background:#ededed; border:1px solid #e4e4e4; display:none">
+                </div>
+            </li>
+            <li style="width:100px; float:left"><a style="text-decoration:underline; color:#66CC00" href="<?php echo ADMIN_URL.'weixin.php?type=userconfig';?>" target="_blank">【查看分红比例】</a></li>
+            <div style="clear:both"></div>
+        </ul>
+    </td>
+    </tr>
+
+    <tr>
+        <td class="label" style="color:#FF0000">分红次数:</td>
+        <td>
+            <input type="text" name="fenhong_num" id="fenhong_num" size="5" value="<?php echo $rt['fenhong_num'] ? : '1'; ?>">
+    　　分红次数默认1次，送牛奶可以设置30，无其他需求请设置1次
+        </td>
+    </tr>
+
+
     <tr>
         <td class="label">上传商品主图:</td>
         <td>

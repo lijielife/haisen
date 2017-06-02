@@ -5,7 +5,7 @@ $db_name   = "fenxiao";
 // database username
 $db_user   = "fenxiao";
 // database password
-$db_pass   = "0900-0sdafjouioijjk"; 
+$db_pass   = "0900-0sdafjouioijjk";
 
 $prefix    = "gz_";
 
