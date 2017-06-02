@@ -1739,7 +1739,7 @@ class UserController extends Controller
                 'shipping_time'   => time()
             ), 'order_id', $id );
 
-            if($bIsSuccess){
+            /*if($bIsSuccess){
                 $field = 'user_id,order_amount';
                 $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
                 $aOrderInfo = $this->App->findrow( $sql );
@@ -1756,7 +1756,7 @@ class UserController extends Controller
                         $this->App->query($sql);
                     }
                 }
-            }
+            }*/
         }
         else if ( $op == "tuikuan" )
         { // 申请退款
@@ -2604,7 +2604,7 @@ class UserController extends Controller
                 $info_data['shipping_time']   = time();
                 $bIsSuccess = $this->App->update( 'group_goods_order_info', $info_data, 'order_id', $id );
 
-                if($bIsSuccess){
+                /*if($bIsSuccess){
                     //将本订单信息积累到gz_user表
                     $sNow = date('Y');
                     $iUserId = intval($aOrderInfo['user_id']);
@@ -2618,7 +2618,7 @@ class UserController extends Controller
                             $this->App->query($sql);
                         }
                     }
-                }
+                }*/
             } else if ( $op == 'tuikuan' ) { // 申请退款
                 $this->App->update( 'group_goods_order_info', array(
                     'order_status' => '5'
@@ -3110,7 +3110,7 @@ class UserController extends Controller
                     'shipping_status' => '5'
                 ), 'order_id', $id);
 
-                if($bIsSuccess){
+                /*if($bIsSuccess){
                     $field = 'user_id,order_amount';
                     $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
                     $aOrderInfo = $this->App->findrow( $sql );
@@ -3127,7 +3127,7 @@ class UserController extends Controller
                             $this->App->query($sql);
                         }
                     }
-                }
+                }*/
             }         
     }
     

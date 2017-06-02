@@ -558,10 +558,10 @@ class ShoppingController extends Controller
             $sql = "SELECT * FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
             $res = $this->App->findrow( $sql );
             $id = $res['order_id'];
-            //改成收款时返佣,不验证userbonus字段
-            //if ($userbonus == 0) {
+            //改成收款时返佣
+            if ($userbonus == 0) {
                 $this->dividend( $id );
-            //}
+            }
 
             $field = "user_id, daili_uid, parent_uid, parent_uid2, parent_uid3, goods_amount,order_amount, order_sn, pay_status, order_id, store_id, wallet_id";
             $sql   = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
@@ -668,9 +668,9 @@ class ShoppingController extends Controller
             
             /* 这里有付款后成功后分成逻辑，乱的我心烦，已删除，如果有需要请从log查看  */
 
-            //if ($userbonus == 0) {
+            if ($userbonus == 0) {
                 $this->rebate( $id );
-            //}
+            }
 
             
             if ( !empty( $record ) )
@@ -692,34 +692,35 @@ class ShoppingController extends Controller
                 $types    = $this->App->findrow( $sql );
                 $type     = $types['type'];
                 $nickname = $types['consignee'];
-                if ( $type == '3' )
+
+                $bIsSuccess = $this->App->update( 'goods_order_info', array(
+                     'shipping_status' => '5' 
+                ), 'order_sn', $order_sn );
+                
+                if ( $bIsSuccess )
                 {
-                    $bIsSuccess = $this->App->update( 'goods_order_info', array(
-                         'shipping_status' => '5' 
-                    ), 'order_sn', $order_sn );
+                    $field         = 'user_id,order_amount';
+                    $sql           = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$order_id' LIMIT 1";
+                    $aOrderInfo    = $this->App->findrow( $sql );
+                    //将本订单信息积累到gz_user表
+                    $sNow          = date( 'Y' );
+                    $iUserId       = intval( $aOrderInfo['user_id'] );
+                    $fPersonBuySum = floatval( $aOrderInfo['order_amount'] );
                     
-                    if ( $bIsSuccess )
+                    if ( !empty( $iUserId ) )
                     {
-                        $field         = 'user_id,order_amount';
-                        $sql           = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$order_id' LIMIT 1";
-                        $aOrderInfo    = $this->App->findrow( $sql );
-                        //将本订单信息积累到gz_user表
-                        $sNow          = date( 'Y' );
-                        $iUserId       = intval( $aOrderInfo['user_id'] );
-                        $fPersonBuySum = floatval( $aOrderInfo['order_amount'] );
-                        
-                        if ( !empty( $iUserId ) )
+                        $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
+                        $iAffectedRows = $this->App->query( $sql );
+                        if ( empty( $iAffectedRows ) )
                         {
-                            $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
-                            $iAffectedRows = $this->App->query( $sql );
-                            if ( empty( $iAffectedRows ) )
-                            {
-                                $sql = "update `gz_user` set `person_buy_sum` = {$fPersonBuySum}, `person_buy_year` = '{$sNow}'  where `user_id` = {$iUserId}";
-                                $this->App->query( $sql );
-                            }
+                            $sql = "update `gz_user` set `person_buy_sum` = {$fPersonBuySum}, `person_buy_year` = '{$sNow}'  where `user_id` = {$iUserId}";
+                            $this->App->query( $sql );
                         }
                     }
-                    
+                }
+
+                if ( $type == '3' )
+                {                    
                     $sql = "SELECT goods_id FROM `{$this->App->prefix()}goods_order` WHERE order_id='$order_id' LIMIT 1";
                     $gid = $this->App->findvar( $sql );
                     if ( $gid > 0 )
@@ -775,7 +776,8 @@ class ShoppingController extends Controller
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
-        if ( $order_info['pay_status'] == 1 && ! empty( $id ) )
+        //if ( $order_info['pay_status'] == 1 && ! empty( $id ) )
+        if ( ! empty( $id ) )
         {
             // 计算资金，便于下面返佣
             // 计算每个产品的佣金
@@ -1749,6 +1751,33 @@ class ShoppingController extends Controller
             
             if ( $uid > 0 )
             {
+                $bIsSuccess = $this->App->update( 'goods_order_info', array(
+                     'shipping_status' => '5' 
+                ), 'order_sn', $order_sn );
+                
+                if ( $bIsSuccess )
+                {
+                    $field         = 'user_id,order_amount';
+                    $sql           = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$order_id' LIMIT 1";
+                    $aOrderInfo    = $this->App->findrow( $sql );
+                    //将本订单信息积累到gz_user表
+                    $sNow          = date( 'Y' );
+                    $iUserId       = intval( $aOrderInfo['user_id'] );
+                    $fPersonBuySum = floatval( $aOrderInfo['order_amount'] );
+                    
+                    if ( !empty( $iUserId ) )
+                    {
+                        $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
+                        $iAffectedRows = $this->App->query( $sql );
+                        if ( empty( $iAffectedRows ) )
+                        {
+                            $sql = "update `gz_user` set `person_buy_sum` = {$fPersonBuySum}, `person_buy_year` = '{$sNow}'  where `user_id` = {$iUserId}";
+                            $this->App->query( $sql );
+                        }
+                    }
+                }
+
+
                 $pwecha_id = $this->App->findvar( "SELECT wecha_id FROM `{$this->App->prefix()}user` WHERE user_id='$uid' AND is_subscribe='1' LIMIT 1" );
                 // 发送通知
                 if ( !empty( $pwecha_id ) )
