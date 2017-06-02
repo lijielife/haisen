@@ -1777,7 +1777,7 @@ class UserController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
@@ -1834,7 +1834,9 @@ class UserController extends Controller
                     }
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['fenhong_num'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $user_id );
@@ -1857,7 +1859,7 @@ class UserController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}group_goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
@@ -1914,7 +1916,9 @@ class UserController extends Controller
                     }
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['fenhong_num'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $user_id );

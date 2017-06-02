@@ -687,13 +687,14 @@ class OrderController extends Controller
             $sql                    = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
             $rts                    = $this->App->findrow( $sql );
             /* 收货返佣金 */
-            if ( $rts['userbonus'] )
-            {
+            //要求改成收款时返佣金
+            //if ( $rts['userbonus'] )
+            //{
                 /* 返佣开始 */
-                $this->rebate( $order_id );
+            //    $this->rebate( $order_id );
                 /* 返分红开始 */
-                $this->dividend( $order_id );
-            }
+            //    $this->dividend( $order_id );
+            //}
         }
         elseif ( $datas['pay_status'] == '1' )
         {
@@ -829,14 +830,14 @@ class OrderController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
         //pay_status:支付状态,0为未支付,1为已支付
         //shipping_status:配送状态,0,2,4,5   收款时分红不需要验证物流状态
         //if ( $order_info['pay_status'] == 1 && $order_info['shipping_status'] == 2 && ! empty( $id ) )
-         if ( $order_info['pay_status'] == 1 && ! empty( $id ) )
+         if ( $order_info['pay_status'] == 1 && ! empty( $id ) ) 
         {
             // 计算资金，便于下面返利
             // 计算每个产品的分红
@@ -886,8 +887,11 @@ class OrderController extends Controller
                     }
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 分红分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['fenhong_num'];
+                        $moeys = $this->format_price( $moeys );
                     }
+                    $this->writeLog( __FILE__ . "|uid:{$uid}| 1 level | money:" . $moeys . "|fenhong:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid );                    
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $user_id );
                     if ( ! empty( $moeys ) && $wallet_status == '1' )

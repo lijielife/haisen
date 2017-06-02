@@ -1037,7 +1037,7 @@ class ShoppingController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
@@ -1094,7 +1094,9 @@ class ShoppingController extends Controller
                     }
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['fenhong_num'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $user_id );
@@ -1117,7 +1119,7 @@ class ShoppingController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}group_goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
@@ -1174,7 +1176,9 @@ class ShoppingController extends Controller
                     }
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['fenhong_num'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $user_id );
@@ -3246,6 +3250,7 @@ class ShoppingController extends Controller
                 $data[$k]['store_id']       = $row['store_id'];
                 $data[$k]['wallet_id']      = $row['wallet_id'];
                 $commission_num = $row['commission_num'];
+                $fenhong_num = $row['fenhong_num'];
                 $store_id       = $row['store_id'];
                 $wallet_id      = $row['wallet_id'];
                 
@@ -3280,6 +3285,12 @@ class ShoppingController extends Controller
                     $data[$k]['takemoney2'] = $row['takemoney2']; //佣金
                 if ( $row['takemoney3'] > 0 )
                     $data[$k]['takemoney3'] = $row['takemoney3']; //佣金
+                if ( $row['fenhong1'] > 0 )
+                    $data[$k]['fenhong1'] = $row['fenhong1']; //分红
+                if ( $row['fenhong2'] > 0 )
+                    $data[$k]['fenhong2'] = $row['fenhong2']; //分红
+                if ( $row['fenhong3'] > 0 )
+                    $data[$k]['fenhong3'] = $row['fenhong3']; //分红                
                 $data[$k]['market_price'] = $mprice;
                 $data[$k]['goods_price']  = $onetotal; //实际价格
                 $data[$k]['goods_attr']   = !empty( $row['spec'] ) ? $row['goods_brief'] . implode( "<br />", $row['spec'] ) : $row['goods_brief'];
@@ -3361,6 +3372,9 @@ class ShoppingController extends Controller
             /* 佣金总次数，剩余次数 */
             $orderdata['commission_num'] = $commission_num;
             $orderdata['commission_surplus'] = $commission_num;
+            /* 分红总次数，剩余次数 */
+            $orderdata['fenhong_num'] = $fenhong_num;
+            $orderdata['fenhong_surplus'] = $fenhong_num;
             
             /* 订单成功后 */
             if ( $this->App->insert( 'goods_order_info', $orderdata ) )
@@ -3741,7 +3755,12 @@ class ShoppingController extends Controller
                     $data[$k]['takemoney2'] = $row['takemoney2']; // 佣金
                 if ( $row['takemoney3'] > 0 )
                     $data[$k]['takemoney3'] = $row['takemoney3']; // 佣金
-                
+                if ( $row['fenhong1'] > 0 )
+                    $data[$k]['fenhong1'] = $row['fenhong1']; //分红
+                if ( $row['fenhong2'] > 0 )
+                    $data[$k]['fenhong2'] = $row['fenhong2']; //分红
+                if ( $row['fenhong3'] > 0 )
+                    $data[$k]['fenhong3'] = $row['fenhong3']; //分红                    
                 $total = $data[$k]['goods_price'] = format_price( $row['price'] ); //实际价格
                 $k++;
             }
