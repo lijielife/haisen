@@ -770,13 +770,17 @@ class OrderController extends Controller
         $order_id or die( '缺少订单ID' );
         $data               = array();
         $data['postscript'] = $_POST['postscript'];
+        $pushOption = $_POST['pushOption'];
         $res                = $this->App->update( 'goods_order_info', $data, 'order_id', $order_id );
         if ( $res !== false )
         {
-            /* 开始分佣 */
-            $this->rebate( $order_id );
-            /* 开始分红 by niripsa */
-            $this->dividend( $order_id );
+            if ( $pushOption == 'rebate' ) {
+                /* 开始分佣 */
+                $this->rebate( $order_id );                
+            } elseif ( $pushOption == 'dividend' ) {
+                /* 开始分红 by niripsa */
+                $this->dividend( $order_id );
+            }
             /* TODO: 推送给购买者 微信提醒 */
             $this->_deliver_goods_push( $order_id );
             die( 'true' );

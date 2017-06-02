@@ -48,12 +48,26 @@
                 <td class="label" width="15%">订单附言：</td>
                 <td>
                     <textarea id="postscript" cols="40" rows="6"><?php echo $rt['orderinfo']['postscript']; ?></textarea><br />
-                    <input type="button" id="postscript_btn" class="postscript-btn" value="推送分佣和分红" />
+                    <input type="button" id="postscript_btn" class="postscript-btn" value="推送分佣" />
                     <span id="postscript_tips" class="postscript-tips">操作成功</span>
                 </td>
                 <td class="label" width="15%">缺货说明：</td>
                 <td><?php echo $rt['orderinfo']['how_oos'];?></td>
             </tr>
+
+            <tr>
+                <td class="label" width="15%">分红剩余次数：</td>
+                <td width="35%">
+                    <span id="fenhong_surplus"><?php echo $rt['orderinfo']['fenhong_surplus']; ?></span>次&nbsp;
+                    <input type="button" id="postscript_btn1" class="postscript-btn" value="推送分红" />
+                    <span id="postscript_tips" class="postscript-tips">操作成功</span>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+
+
+
             <tr> 
                 <td class="label" width="15%">邮费：</td>
                 <td >￥<?php echo $rt['orderinfo']['shipping_fee'];?></td>
@@ -205,7 +219,7 @@ $( '#postscript_btn' ).live( 'click', function() {
     var url = '<?php echo $thisurl; ?>';
     var id  = '<?php echo $_GET['id']; ?>';
     var postscript = $( '#postscript' ).val();
-    var data = { action:'ajax_up_postscript', order_id:id, postscript: postscript }
+    var data = { action:'ajax_up_postscript', order_id:id, postscript: postscript, pushOption:'rebate'}
     $.post( url, data, function ( res ) {
         if ( res == 'true' )
         {
@@ -213,6 +227,23 @@ $( '#postscript_btn' ).live( 'click', function() {
             var surplus = $( '#commission_surplus' ).html();
             if ( surplus <= 0 ) { return; }
             $( '#commission_surplus' ).html( surplus*1 - 1 );
+            $( '#postscript_tips' ).show();
+        }
+    } );
+} );
+
+$( '#postscript_btn1' ).live( 'click', function() {
+    var url = '<?php echo $thisurl; ?>';
+    var id  = '<?php echo $_GET['id']; ?>';
+    var postscript = $( '#postscript' ).val();
+    var data = { action:'ajax_up_postscript', order_id:id, postscript: postscript, pushOption:'dividend'}
+    $.post( url, data, function ( res ) {
+        if ( res == 'true' )
+        {
+            /* TODO 成功 */
+            var surplus = $( '#fenhong_surplus' ).html();
+            if ( surplus <= 0 ) { return; }
+            $( '#fenhong_surplus' ).html( surplus*1 - 1 );
             $( '#postscript_tips' ).show();
         }
     } );
