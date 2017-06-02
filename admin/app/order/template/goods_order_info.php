@@ -48,7 +48,7 @@
                 <td class="label" width="15%">订单附言：</td>
                 <td>
                     <textarea id="postscript" cols="40" rows="6"><?php echo $rt['orderinfo']['postscript']; ?></textarea><br />
-                    <input type="button" id="postscript_btn" class="postscript-btn" value="推送分佣" />
+                    <input type="button" id="postscript_btn" class="postscript-btn" value="推送分佣和分红" />
                     <span id="postscript_tips" class="postscript-tips">操作成功</span>
                 </td>
                 <td class="label" width="15%">缺货说明：</td>

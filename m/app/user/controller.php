@@ -1724,14 +1724,15 @@ class UserController extends Controller
             $sql ="SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
             $rts = $this->App->findrow( $sql );
             /* 收货返佣金 */
-            if ( $rts['userbonus'] )
-            {
+            //要求改成收款时返佣
+            //if ( $rts['userbonus'] )
+            //{
                 /* 返佣开始 */
-                $this->rebate( $id );
+            //    $this->rebate( $id );
 
                 /* 分红开始  by niripsa*/
-                $this->dividend( $id );
-            }
+            //    $this->dividend( $id );
+            //}
             /* 更新订单 */
             $bIsSuccess = $this->App->update( 'goods_order_info', array(
                 'shipping_status' => '5',
@@ -2580,13 +2581,13 @@ class UserController extends Controller
                 $rts = $this->App->findrow( $sql );
                 /* 确认收货返佣 */
                 $aOrderInfo = array();
-                if ( $rts['userbonus'] )
+                //要求改成收款时即返佣
+                /*if ( $rts['userbonus'] )
                 {
-                    //MARK
                     $this->group_dividend( $id );
 
                     $aOrderInfo = $this->group_rebate( $id );
-                }
+                }*/
 
                 if(empty($aOrderInfo)){
                     $field = 'user_id,parent_uid,parent_uid2,parent_uid3,parent_uid4,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';

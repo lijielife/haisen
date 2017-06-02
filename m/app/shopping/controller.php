@@ -558,9 +558,10 @@ class ShoppingController extends Controller
             $sql = "SELECT * FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
             $res = $this->App->findrow( $sql );
             $id = $res['order_id'];
-            if ($userbonus == 0) {
+            //改成收款时返佣,不验证userbonus字段
+            //if ($userbonus == 0) {
                 $this->dividend( $id );
-            }
+            //}
 
             $field = "user_id, daili_uid, parent_uid, parent_uid2, parent_uid3, goods_amount,order_amount, order_sn, pay_status, order_id, store_id, wallet_id";
             $sql   = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
@@ -667,9 +668,9 @@ class ShoppingController extends Controller
             
             /* 这里有付款后成功后分成逻辑，乱的我心烦，已删除，如果有需要请从log查看  */
 
-            if ($userbonus == 0) {
+            //if ($userbonus == 0) {
                 $this->rebate( $id );
-            }
+            //}
 
             
             if ( !empty( $record ) )
@@ -1102,7 +1103,7 @@ class ShoppingController extends Controller
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
                         /* 加记录 */
-                        $this->_add_money_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
+                        $this->_add_fenhong_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
                         $this->_send_notice( $user_id, $nickname );
                     }
@@ -1255,9 +1256,10 @@ class ShoppingController extends Controller
             $sql = "SELECT * FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
             $res = $this->App->findrow( $sql );
             $id = $res['order_id'];
-            if ($userbonus == 0) {
+            //要求改成收款时返佣,不验证userbonus字段
+            //if ($userbonus == 0) {
                 $this->group_dividend( $id );
-            }
+            //}
                         
             $field = "user_id, parent_uid, parent_uid2, parent_uid3, goods_amount,order_amount, order_sn, pay_status, order_id";
             $sql   = "SELECT {$field} FROM `{$this->App->prefix()}group_goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";

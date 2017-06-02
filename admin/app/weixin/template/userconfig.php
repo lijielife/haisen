@@ -65,6 +65,8 @@
              <br/>
             四层分佣<input name="ticheng180_4_1" value="<?php echo isset($rt['ticheng180_4_1']) ? $rt['ticheng180_4_1'] : '0';?>" size="10" type="text" />% * <input name="ticheng180_4_2" value="<?php echo isset($rt['ticheng180_4_2']) ? $rt['ticheng180_4_2'] : '0';?>" size="10" type="text" />%(团队累积达到<input name="team_accumulative_money" value="<?php echo isset($rt['team_accumulative_money']) ? $rt['team_accumulative_money'] : '0';?>" size="10" type="text" />元, 达不到, 则无佣金)
              <br/>
+             分红<input name="fenhong180" value="<?php echo isset($rt['fenhong180']) ? $rt['fenhong180'] : '0';?>" size="10" type="text" />%
+             <br/>             
               </td>
         </tr>
         <!-- <tr>
@@ -189,8 +191,9 @@ $('.submit').click(function(){
     var level_4_2 = parseInt($('[name="ticheng180_4_2"]').val());
     var person_accumulative_money = parseInt($('[name="person_accumulative_money"]').val());
     var team_accumulative_money = parseInt($('[name="team_accumulative_money"]').val());
+    var fenhong = parseInt($('[name="fenhong180"]').val());
     if(level_1_1 >=0 && level_1_2 >=0 && level_2_1 >=0 && level_2_2 >=0 
-        && level_3_1 >=0 && level_3_2 >=0 && level_4_1 >=0 && level_4_2 >=0 && person_accumulative_money >=0 && team_accumulative_money >=0){
+        && level_3_1 >=0 && level_3_2 >=0 && level_4_1 >=0 && level_4_2 >=0 && person_accumulative_money >=0 && team_accumulative_money >=0 && fenhong >=0){
         return true;
     }else{
         alert("普通分销信息设置不正确！");
