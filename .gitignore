@@ -1,0 +1,6 @@
+#log 
+.log*
+#sess
+sess/*
+#cache
+cache/*
