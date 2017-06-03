@@ -1106,6 +1106,10 @@ class ShoppingController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
+                        /* 分红剩余次数-1 */
+                        $data = array();
+                        $data['fenhong_surplus'] = $order_info['fenhong_surplus']-1;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );                        
                         /* 加记录 */
                         $this->_add_fenhong_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -3877,7 +3881,7 @@ class ShoppingController extends Controller
         
         $daili_uid  = isset( $pu['daili_uid'] ) ? $pu['daili_uid'] : 0; //代理
         $moeys      = isset( $pu['order_amount'] ) ? $pu['order_amount'] : 0; //实际消费
-        $uid        = isset( $pu['user_id'] ) ? $pu['user_id'] : 0;
+        $uid        = isset( $pu['user_id'] ) ? $pu['user_id'] : 0;  //自身id
         $pay_status = isset( $pu['pay_status'] ) ? $pu['pay_status'] : 0;
         $order_id   = isset( $pu['order_id'] ) ? $pu['order_id'] : 0;
         
@@ -3887,9 +3891,62 @@ class ShoppingController extends Controller
         if ( !empty( $order_sn ) )
         {
             // 计算每个产品的佣金
-            $sql    = "SELECT takemoney1,takemoney2,takemoney3,goods_number FROM `{$this->App->prefix()}goods_order` WHERE order_id='$order_id'";
+            $sql    = "SELECT fenhong1,takemoney1,takemoney2,takemoney3,goods_number FROM `{$this->App->prefix()}goods_order` WHERE order_id='$order_id'";
             $moneys = $this->App->find( $sql );
             $record = array();
+
+            $moeys  = 0;
+            //自身返分红
+            if ( $uid > 0 )
+            {
+                $sql  = "SELECT user_rank FROM `{$this->App->prefix()}user` WHERE user_id='$uid' LIMIT 1";
+                $rank = $this->App->findvar( $sql );
+                if ( $rank != '1' ) // 不是普通会员
+                {
+                    $sql   = "SELECT types FROM `{$this->App->prefix()}user` WHERE user_id='$uid' LIMIT 1";
+                    $types = $this->App->findvar( $sql );
+                    $off   = 0;
+                    if ( $rank == '12' ) //普通分销商
+                    {
+                        if ( $rts['fenhong180'] < 101 && $rts['fenhong180'] > 0 )
+                        {
+                            $off = $rts['fenhong180'] / 100;
+                            if ( !empty( $moneys ) )
+                            {
+                                foreach ( $moneys as $row )
+                                {
+                                    if ( $row['fenhong1'] > 0 )
+                                    {
+                                        $moeys += $row['fenhong1'] * $row['goods_number'] * $off;
+                                    }
+                                }
+                            }
+                        }
+                    }                    
+                    $this->writeLog( __FILE__ . "|2|uid:{$uid}| 0 level | money:" . $moeys . "|fenhong:" . $off . '|rank:' . $rank . '|uid:' . $uid );
+                    
+                    if ( $moeys > 0 )
+                        $moeys = format_price( $moeys );
+                    if ( !empty( $moeys ) )
+                    {
+                        $thismonth        = date( 'Y-m-d', time() );
+                        $thism            = date( 'Y-m', time() );
+                        $change_cache_arr = array(
+                             'buyuid' => $uid,
+                            'order_sn' => $order_sn,
+                            'thismonth' => $thismonth,
+                            'thism' => $thism,
+                            'money' => $moeys,
+                            'changedesc' => '购买商品返分红',
+                            'time' => time(),
+                            'uid' => $uid 
+                        );
+                        $this->App->insert( 'user_money_change_cache', $change_cache_arr );
+                    }
+                }
+            }
+
+
             $moeys  = 0;
             //一级返佣金
             if ( $parent_uid > 0 )

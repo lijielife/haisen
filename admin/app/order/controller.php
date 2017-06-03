@@ -834,14 +834,17 @@ class OrderController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num,fenhong_surplus';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
-        
+        if ( ! $order_info['fenhong_surplus']) {
+           die( 'false' );
+        }
         //pay_status:支付状态,0为未支付,1为已支付
         //shipping_status:配送状态,0,2,4,5   收款时分红不需要验证物流状态
         //if ( $order_info['pay_status'] == 1 && $order_info['shipping_status'] == 2 && ! empty( $id ) )
-         if ( $order_info['pay_status'] == 1 && ! empty( $id ) ) 
+        //后台推送不需要验证付款状态
+         if ( ! empty( $id ) ) 
         {
             // 计算资金，便于下面返利
             // 计算每个产品的分红
@@ -902,6 +905,12 @@ class OrderController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
+                        /* 分红剩余次数-1 */
+                        $data = array();
+                        $data['fenhong_surplus'] = $order_info['fenhong_surplus']-1;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $user_id );                       
                         /* 加记录 */
                         $this->_add_fenhong_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */

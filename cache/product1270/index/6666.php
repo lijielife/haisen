@@ -145,9 +145,9 @@
     'wid' => '3',
     'userbonus' => '1',
     'takeover' => '0',
-    'fenhong180' => '0',
-    'fenhong180_h1' => '0',
-    'fenhong180_h2' => '0',
+    'fenhong180' => '100',
+    'fenhong180_h1' => '45',
+    'fenhong180_h2' => '30',
   ),
   'order_count' => '0',
 );$__tmp_uniqueid = "ff800ef0085ac12b43b2a24abe2e89db"; ?>

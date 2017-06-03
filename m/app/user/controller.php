@@ -1844,6 +1844,12 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
+                        /* 分红剩余次数-1 */
+                        $data = array();
+                        $data['fenhong_surplus'] = $order_info['fenhong_surplus']-1;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $user_id );                                  
                         /* 加记录 */
                         $this->_add_fenhong_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -1926,6 +1932,12 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
+                        /* 分红剩余次数-1 */
+                        $data = array();
+                        $data['fenhong_surplus'] = $order_info['fenhong_surplus']-1;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $user_id );                           
                         /* 加记录 */
                         $this->_add_fenhong_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -2469,7 +2481,16 @@ class UserController extends Controller
 
         return $order_info;
     }
-
+    /**
+     * 减少money_change_cache.money
+     */
+    private function _decr_money_change_cache( $money, $order_sn, $uid )
+    {
+        $sql = "UPDATE `{$this->App->prefix()}user_money_change_cache` 
+        SET money = money - {$money} 
+        WHERE order_sn = '{$order_sn}' AND uid = '{$uid}'";
+        $this->App->query( $sql );
+    }
     /**
      * 检查钱包状态
      * wallet_id 钱包ID

@@ -436,6 +436,7 @@ class DailiController extends Controller
         
         $this->set( 'rt', $rt );
         $mb = $GLOBALS['LANG']['mubanid'] > 0 ? $GLOBALS['LANG']['mubanid'] : '';
+        //25
         $this->template( $mb . '/v2_mymoney' );
     }
     

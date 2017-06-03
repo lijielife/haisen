@@ -131,7 +131,7 @@
     'wid' => '3',
     'userbonus' => '1',
     'takeover' => '0',
-    'fenhong180' => '60',
+    'fenhong180' => '100',
     'fenhong180_h1' => '45',
     'fenhong180_h2' => '30',
   ),
