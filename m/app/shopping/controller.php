@@ -694,7 +694,7 @@ class ShoppingController extends Controller
                 $nickname = $types['consignee'];
 
                 $bIsSuccess = $this->App->update( 'goods_order_info', array(
-                     'shipping_status' => '5' 
+                     'shipping_status' => '2' 
                 ), 'order_sn', $order_sn );
                 
                 if ( $bIsSuccess )
@@ -709,6 +709,7 @@ class ShoppingController extends Controller
                     
                     if ( !empty( $iUserId ) )
                     {
+			file_put_contents("/wwwroot/custom_fenxiao/payinfo.log","SHOPPING/CONTROLLER.PHP line 712 收款时累积".PHP_EOL, FILE_APPEND);
                         $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
                         $iAffectedRows = $this->App->query( $sql );
                         if ( empty( $iAffectedRows ) )
@@ -1756,7 +1757,7 @@ class ShoppingController extends Controller
             if ( $uid > 0 )
             {
                 $bIsSuccess = $this->App->update( 'goods_order_info', array(
-                     'shipping_status' => '5' 
+                     'shipping_status' => '2' 
                 ), 'order_sn', $order_sn );
                 
                 if ( $bIsSuccess )
@@ -1771,6 +1772,7 @@ class ShoppingController extends Controller
                     
                     if ( !empty( $iUserId ) )
                     {
+			file_put_contents("/wwwroot/custom_fenxiao/payinfo.log","SHOPPING/CONTROLLER.PHP line 1775 团购 收款时积累 ".PHP_EOL, FILE_APPEND);
                         $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
                         $iAffectedRows = $this->App->query( $sql );
                         if ( empty( $iAffectedRows ) )

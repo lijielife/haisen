@@ -1896,6 +1896,7 @@ class DailiController extends Controller
                 $fPersonBuySum = floatval($aOrderInfo['order_amount']);
 
                 if(!empty($iUserId)){
+			file_put_contents("/wwwroot/custom_fenxiao/payinfo.log","DALILI/CONTROLLER.PHP 	line 1899 ".PHP_EOL, FILE_APPEND);
                     $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
                     $iAffectedRows = $this->App->query($sql);
                     if(empty($iAffectedRows)){
