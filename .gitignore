@@ -1,8 +1,14 @@
 #log 
 .log*
+.log
 #sess
 /sess/*
+sess/*
 #cache
 /cache/*
+cache/*
 #.gitignore
 .gitignore
+#photos
+/photos/*
+photos/*
