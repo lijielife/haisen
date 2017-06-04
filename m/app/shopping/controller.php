@@ -554,14 +554,14 @@ class ShoppingController extends Controller
         //userbonus即设置返利时间,为0则收款时返利,为1则收货时返利
         if ( $tt == 'true' && $status == '1' && !empty( $order_sn ) )
         {
-            //如果设置为收款时返利，则开始返分红 by niripsa
-            $sql = "SELECT * FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
+            //在这里并不返分红，只是积累
+            /*$sql = "SELECT * FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
             $res = $this->App->findrow( $sql );
             $id = $res['order_id'];
             //改成收款时返佣
             if ($userbonus == 0) {
                 $this->dividend( $id );
-            }
+            }*/
 
             $field = "user_id, daili_uid, parent_uid, parent_uid2, parent_uid3, goods_amount,order_amount, order_sn, pay_status, order_id, store_id, wallet_id";
             $sql   = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_sn = '$order_sn' LIMIT 1";
@@ -668,9 +668,10 @@ class ShoppingController extends Controller
             
             /* 这里有付款后成功后分成逻辑，乱的我心烦，已删除，如果有需要请从log查看  */
 
-            if ($userbonus == 0) {
+            //付款成功后并不分成,只积累
+            /*if ($userbonus == 0) {
                 $this->rebate( $id );
-            }
+            }*/
 
             
             if ( !empty( $record ) )
@@ -707,9 +708,10 @@ class ShoppingController extends Controller
                     $iUserId       = intval( $aOrderInfo['user_id'] );
                     $fPersonBuySum = floatval( $aOrderInfo['order_amount'] );
                     
+                    //MARK???
                     if ( !empty( $iUserId ) )
                     {
-			file_put_contents("/wwwroot/custom_fenxiao/payinfo.log","SHOPPING/CONTROLLER.PHP line 712 收款时累积".PHP_EOL, FILE_APPEND);
+			            file_put_contents("/wwwroot/custom_fenxiao/payinfo.log","SHOPPING/CONTROLLER.PHP line 712 收款时累积".PHP_EOL, FILE_APPEND);
                         $sql = "update `gz_user` set `person_buy_sum` = `person_buy_sum` + {$fPersonBuySum} where `user_id` = {$iUserId} and `person_buy_year` = '{$sNow}'";
                         $iAffectedRows = $this->App->query( $sql );
                         if ( empty( $iAffectedRows ) )
@@ -1268,8 +1270,9 @@ class ShoppingController extends Controller
             $res = $this->App->findrow( $sql );
             $id = $res['order_id'];
             //要求改成收款时返佣,不验证userbonus字段
+            //付款时不返佣
             //if ($userbonus == 0) {
-                $this->group_dividend( $id );
+            //    $this->group_dividend( $id );
             //}
                         
             $field = "user_id, parent_uid, parent_uid2, parent_uid3, goods_amount,order_amount, order_sn, pay_status, order_id";

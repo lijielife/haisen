@@ -1724,15 +1724,15 @@ class UserController extends Controller
             $sql ="SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
             $rts = $this->App->findrow( $sql );
             /* 收货返佣金 */
-            //要求改成收款时返佣
-            //if ( $rts['userbonus'] )
-            //{
+            if ( $rts['userbonus'] )
+            {
+                //收货之后返剩余的全部佣金和分红
                 /* 返佣开始 */
-            //    $this->rebate( $id );
+                $this->rebate( $id );
 
                 /* 分红开始  by niripsa*/
-            //    $this->dividend( $id );
-            //}
+                $this->dividend( $id );
+            }
             /* 更新订单 */
             $bIsSuccess = $this->App->update( 'goods_order_info', array(
                 'shipping_status' => '5',
@@ -1836,6 +1836,8 @@ class UserController extends Controller
                     {
                         /* 佣金分次，计算每一次的佣金费用 */
                         $moeys = $moeys / $order_info['fenhong_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['fenhong_surplus'];
                         $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
@@ -1844,9 +1846,9 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
-                        /* 分红剩余次数-1 */
+                        /* 分红剩余次数为0 */
                         $data = array();
-                        $data['fenhong_surplus'] = $order_info['fenhong_surplus']-1;
+                        $data['fenhong_surplus'] =0;
                         $this->App->update( 'goods_order_info', $data, 'order_id', $id );
                         /* 减少 user_money_change_cache */
                         $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $user_id );                                  
@@ -1865,7 +1867,7 @@ class UserController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返分红选项
-        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num';
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num,fenhong_surplus';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}group_goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
@@ -1924,17 +1926,20 @@ class UserController extends Controller
                     {
                         /* 佣金分次，计算每一次的佣金费用 */
                         $moeys = $moeys / $order_info['fenhong_num'];
+                    /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['fenhong_surplus'];
                         $moeys = $this->format_price( $moeys );
                     }
+                    
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $user_id );
                     if ( ! empty( $moeys ) && $wallet_status == '1' )
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $user_id, $moeys );
-                        /* 分红剩余次数-1 */
+                        /* 分红剩余次数为0 */
                         $data = array();
-                        $data['fenhong_surplus'] = $order_info['fenhong_surplus']-1;
+                        $data['fenhong_surplus'] = 0;
                         $this->App->update( 'goods_order_info', $data, 'order_id', $id );
                         /* 减少 user_money_change_cache */
                         $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $user_id );                           
@@ -2606,13 +2611,12 @@ class UserController extends Controller
                 $rts = $this->App->findrow( $sql );
                 /* 确认收货返佣 */
                 $aOrderInfo = array();
-                //要求改成收款时即返佣
-                /*if ( $rts['userbonus'] )
+                if ( $rts['userbonus'] )
                 {
                     $this->group_dividend( $id );
 
                     $aOrderInfo = $this->group_rebate( $id );
-                }*/
+                }
 
                 if(empty($aOrderInfo)){
                     $field = 'user_id,parent_uid,parent_uid2,parent_uid3,parent_uid4,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';

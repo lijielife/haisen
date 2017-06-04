@@ -687,14 +687,13 @@ class OrderController extends Controller
             $sql                    = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
             $rts                    = $this->App->findrow( $sql );
             /* 收货返佣金 */
-            //要求改成收款时返佣金
-            //if ( $rts['userbonus'] )
-            //{
+            if ( $rts['userbonus'] )
+            {
                 /* 返佣开始 */
-            //    $this->rebate( $order_id );
+                $this->rebate( $order_id );
                 /* 返分红开始 */
-            //    $this->dividend( $order_id );
-            //}
+                $this->dividend( $order_id );
+            }
         }
         elseif ( $datas['pay_status'] == '1' )
         {
