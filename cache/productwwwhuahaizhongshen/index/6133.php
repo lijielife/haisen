@@ -66,6 +66,10 @@
     'store_id' => '6',
     'wallet_id' => '2',
     'commission_num' => '30',
+    'fenhong1' => '0.00',
+    'fenhong2' => '0.00',
+    'fenhong3' => '0.00',
+    'fenhong_num' => '1',
     'cat_name' => NULL,
     'brand_name' => NULL,
     'brand_desc' => NULL,
@@ -89,7 +93,7 @@
     'avg_shopping_rand' => NULL,
     'avg_saleafter_rand' => NULL,
   ),
-  'comment_count' => -1,
+  'comment_count' => 0,
   'commentlist' => 
   array (
   ),
@@ -138,6 +142,9 @@
     'wid' => '3',
     'userbonus' => '1',
     'takeover' => '0',
+    'fenhong180' => '100',
+    'fenhong180_h1' => '0',
+    'fenhong180_h2' => '0',
   ),
-  'order_count' => '1',
+  'order_count' => '0',
 );$__tmp_uniqueid = "a303095ba405583152253be33cc9ecc5"; ?>

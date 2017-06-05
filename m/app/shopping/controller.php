@@ -2946,6 +2946,7 @@ class ShoppingController extends Controller
         $uid = $this->Session->read( 'User.uid' );
         
         $goodslist = $this->Session->read( 'cart' );
+	file_put_contents("/wwwroot/custom_fenxiao/buyinfo.log",date("Y-m-d H:i:s",time())." shopping/controller.php checkout line 2949 ".$uid." ".json_encode($goodslist).PHP_EOL,FILE_APPEND);
         if ( empty( $goodslist ) )
         {
             //$this->jump(ADMIN_URL,0,'购物车为空，请先加入购物车！');exit;
@@ -3032,7 +3033,8 @@ class ShoppingController extends Controller
             $rt['userinfo']['pay_points'] = $uu[1];
             unset( $uu );
         }
-        
+       
+	file_put_contents("/wwwroot/custom_fenxiao/buyinfo.log",date("Y-m-d H:i:s",time())."go to line 3037 ".PHP_EOL,FILE_APPEND); 
         if ( ( $pay_id == 7 ) )
         {
             $amount    = $rt['total'] + $rt['shipping_fee'];
@@ -3121,6 +3123,8 @@ class ShoppingController extends Controller
             define( 'NAVNAME', "确认订单" );
         $rt['total_point'] = $total_point;
         $this->set( 'rt', $rt );
+	file_put_contents("/wwwroot/custom_fenxiao/buyinfo.log",date("Y-m-d H:i:s",time())."go to line 3126 end ".json_encode($rt).PHP_EOL,FILE_APPEND);	
+
         $mb = $GLOBALS['LANG']['mubanid'] > 0 ? $GLOBALS['LANG']['mubanid'] : '';
         $this->template( $mb . '/mycart_checkout' );
     }
