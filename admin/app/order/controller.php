@@ -686,13 +686,13 @@ class OrderController extends Controller
             $datas['shipping_time'] = time();
             $sql                    = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
             $rts                    = $this->App->findrow( $sql );
-            /* 收货返佣金 */
+            /* 收货返全部佣金 */
             if ( $rts['userbonus'] )
             {
                 /* 返佣开始 */
                 $this->rebate( $order_id );
                 /* 返分红开始 */
-                $this->dividend( $order_id );
+                $this->dividend_all( $order_id );
             }
         }
         elseif ( $datas['pay_status'] == '1' )
@@ -701,7 +701,8 @@ class OrderController extends Controller
         }
         
         $bIsSuccess = $this->App->update( 'goods_order_info', $datas, 'order_id', $data['opid'] ); // 更新状态
-        if ( $bIsSuccess && !empty( $datas['shipping_time'] ) )
+        //if ( $bIsSuccess && !empty( $datas['shipping_time'] ) )
+        if ( $bIsSuccess && $datas['pay_status'] )
         {
             //更新个人积累
             $field         = 'user_id,order_amount';
@@ -751,12 +752,12 @@ class OrderController extends Controller
         }
         
         // 返佣金
-        if ( $datas['pay_status'] == '1' )
+        /*if ( $datas['pay_status'] == '1' )
         {
             $order_id = $data['opid'];
             $order_sn = $this->App->findvar( "SELECT order_sn FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$order_id' LIMIT 1" );
             $this->pay_successs_tatus2( $order_sn );
-        }
+        }*/
         
         $this->set( 'action_info', $rt );
         $this->fetch( 'goods_order_action_ajax' );
@@ -919,6 +920,98 @@ class OrderController extends Controller
             }
         }
     }
+
+
+    //收货时返还剩余的全部分红
+    public function dividend_all( $id ){
+        $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
+        $rts = $this->App->findrow( $sql );
+        // 开启收货返分红选项
+        $field = 'user_id,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,fenhong_num,fenhong_surplus';
+        $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
+        $order_info = $this->App->findrow( $sql );
+        
+        //pay_status:支付状态,0为未支付,1为已支付
+        //shipping_status:配送状态,0,2,4,5   收款时分红不需要验证物流状态
+        //if ( $order_info['pay_status'] == 1 && $order_info['shipping_status'] == 2 && ! empty( $id ) )
+         if ( $order_info['pay_status'] == 1 && $order_info['shipping_status'] == 2 && ! empty( $id ) )
+        {
+            // 计算资金，便于下面返利
+            // 计算每个产品的分红
+            $sql = "SELECT fenhong1,goods_number,wallet_id FROM `{$this->App->prefix()}goods_order` WHERE order_id = '$id'";
+            $moneys = $this->App->find( $sql );
+            /* 所属佣金钱包 */
+            $wallet_id = $moneys[0]['wallet_id'];
+            $user_id      = $uid = isset($order_info['user_id']) ? $order_info['user_id'] : 0;  // 自己
+            $scores_money = isset($order_info['order_amount']) ? $order_info['order_amount'] : 0; // 实际消费
+            $pay_status   = isset($order_info['pay_status']) ? $order_info['pay_status'] : 0;
+            $order_id     = isset($order_info['order_id']) ? $order_info['order_id'] : 0;
+            $order_sn     = isset($order_info['order_sn']) ? $order_info['order_sn'] : 0;
+            
+            $sql = "SELECT nickname FROM `{$this->App->prefix()}user` WHERE user_id='$uid' LIMIT 1";
+            $nickname = $this->App->findvar( $sql );
+            $record = array();
+            $moeys = 0;
+            //分红返利
+            if ( $user_id > 0 )
+            {                
+                $sql = "SELECT user_rank FROM `{$this->App->prefix()}user` WHERE user_id = '$user_id' LIMIT 1";
+                $rank = $this->App->findvar( $sql );
+                /* 不是普通会员 */
+                if ( $rank != '1' )
+                {
+                    /*$sql = "SELECT types FROM `{$this->App->prefix()}user` WHERE user_id = '$user_id' LIMIT 1";这个好像用不到
+                    $types = $this->App->findvar( $sql );*/
+                    $off = 0;
+                    /* 普通分销商 特权、高级先去掉，以后如果需要从log里面找 */
+                    if ( $rank == '12' )
+                    {
+                        if ( $rts['fenhong180'] < 101 && $rts['fenhong180'] > 0 )
+                        {
+                            $off = $rts['fenhong180'] / 100;
+                            if ( ! empty( $moneys ) )
+                            {
+                                foreach ( $moneys as $row )
+                                {
+                                    //fenhong1 个人分红
+                                    if ( $row['fenhong1'] > 0 )
+                                    {
+                                        $moeys += $row['fenhong1'] * $row['goods_number'] * $off;
+                                    }
+                                }
+                            }                                            
+                        }
+                    }
+                    if ( $moeys > 0 )
+                    {
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['fenhong_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['fenhong_surplus'];
+                        $moeys = $this->format_price( $moeys );
+                    }
+                    /* 检查钱包状态 */
+                    $wallet_status = $this->_wallet_status( $wallet_id, $user_id );
+                    if ( ! empty( $moeys ) && $wallet_status == '1' )
+                    {
+                        /* 加钱 */
+                        $this->_add_money( $wallet_id, $user_id, $moeys );
+                        /* 分红剩余次数为0 */
+                        $data = array();
+                        $data['fenhong_surplus'] =0;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $user_id );                                  
+                        /* 加记录 */
+                        $this->_add_fenhong_change( $uid, $user_id, $order_sn, $moeys, $wallet_id );
+                        /* 发通知 */
+                        $this->_send_notice( $user_id, $nickname );
+                    }
+                }
+            }
+        }
+    }
+
 
     
     /**
