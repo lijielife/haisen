@@ -589,7 +589,7 @@ class CommonController extends Controller
         $nickname   = $this->Session->read('User.nickname');
         
         // 授权获取用户openid
-        if( empty($wecha_id) && $rt['winxintype']=='3' || ! $nickname ) {
+        if( empty($wecha_id) && $rt['winxintype']=='3') {
             if(!isset($_GET['code'])){
                 $this->get_user_code();//授权跳转
             }
