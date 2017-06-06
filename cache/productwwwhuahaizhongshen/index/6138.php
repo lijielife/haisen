@@ -135,5 +135,5 @@
     'fenhong180_h1' => '0',
     'fenhong180_h2' => '0',
   ),
-  'order_count' => '0',
+  'order_count' => NULL,
 );$__tmp_uniqueid = "a8ba525ed849697a1dbea89d4eb1acea"; ?>

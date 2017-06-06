@@ -85,7 +85,7 @@
     'avg_shopping_rand' => NULL,
     'avg_saleafter_rand' => NULL,
   ),
-  'comment_count' => -20,
+  'comment_count' => 0,
   'commentlist' => 
   array (
   ),
@@ -138,5 +138,5 @@
     'fenhong180_h1' => '0',
     'fenhong180_h2' => '0',
   ),
-  'order_count' => '20',
+  'order_count' => '0',
 );$__tmp_uniqueid = "86246097e24335572d111f90e0b469bb"; ?>

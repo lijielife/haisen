@@ -517,11 +517,10 @@ class ProductController extends Controller
         *1:购买数量操作库存
         *2:错误提示，提示内容为message值
         */
-        
         $err = 0;
         $result = array('error' => $err, 'message' => '');
         $json = Import::json();
-    
+        file_put_contents("/wwwroot/custom_fenxiao/json.log", json_encode($data['goods']).PHP_EOL, FILE_APPEND); 
         if (empty($data['goods']))
         {
             $result['error'] = 2;

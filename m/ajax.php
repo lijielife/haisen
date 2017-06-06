@@ -3,7 +3,7 @@ require_once( 'load.php' );
 $action = isset( $_REQUEST['action'] ) ? $_REQUEST['action'] : "";
 switch ( $action ) {
     case 'addcart':
-        $app->action( 'product', 'ajax_add_cart', $_POST ); // 添加到购物车
+        $app->action( 'product', 'ajax_add_cart', $_REQUEST ); // 添加到购物车
         break;
     case 'addtocoll':
         $app->action( 'product', 'ajax_add_tocoll', $_POST['goods_id'] ); // 添加收藏

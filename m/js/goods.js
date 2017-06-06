@@ -8,10 +8,11 @@ function pload(){
  * obj:
  */
 function addToCart(goodsid,tt)
-{ 
+{
  if(tt=="jifen_cartlist" || tt=="jifen"){
     if(confirm("你确定兑换吗？兑换后你的积分将会相应减少！")){}else{ return false;}
  }
+
 
 //判断js函数是否存在
  try{  
@@ -21,7 +22,6 @@ function addToCart(goodsid,tt)
       }
   }
  }catch(e){
-       //alert("not function"); 
  }
 
   var goods        = new Object();  //一个商品的所有属性
@@ -45,13 +45,19 @@ function addToCart(goodsid,tt)
   goods.goods_id = goodsid;
   goods.number   = number;
   goods.optype = (typeof(tt)=='undefined' || tt=="") ? "" : tt;
+
+
   createwindow();
   $.ajax({
        type: "POST",
-       url: SITE_URL + "ajax.php?action=addcart",
+       url: SITE_URL + "ajax.php?action=addcart&inajax=1",
        data: "goods=" + $.toJSON( goods ),
        dataType: "json",
        success: function(data){
+            if(/http/.test(data.url+"")){
+               window.location.href=data.url + "?goods=" + $.toJSON( goods );
+               return;
+            }
             removewindow();
             // 是否关注后才能购买处理
             if ( data.error == '22' ) {
@@ -66,6 +72,8 @@ function addToCart(goodsid,tt)
             }
             
             if ( tt != "jumpshopping" ) {
+	
+
                 var flyElm = $('.ggimg').clone().css('opacity','0.7');
                 flyElm.css({
                     'z-index': 9000,
@@ -147,23 +155,28 @@ function addToCart(goodsid,tt)
                     //pload();
                     
                     if(data.error==0){
+
+
                         if(tt=='jumpshopping'){ //jump shopping cart
                             window.location.href = SITE_URL+'mycart.php?type=checkout';
                         }else{
                             //JqueryDialog.Open('官方系统提醒你','加入购物车成功',260,40);
-                            //alert("加入购物车成功！");
                             if(data.nums > 0){
                                 $('.mycarts').html(data.nums);
                             }
                         }
                     }else{
-                        //alert("加入购物车成功！");
                         JqueryDialog.Open('官方系统提醒你',data.message,260,40);
                     }
                  }
              }
             
-       }//end sucdess
+       },//end sucdess
+       error:function(data){
+                
+		removewindow();
+		alert("提交订单失败，请稍后再试");
+       }
     });
   return false;
 }

@@ -26,7 +26,9 @@ class OauthController extends Controller{
 		$state = 'wechat';
 		$scope = 'snsapi_base';
 		$oauth_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' . $appid . '&redirect_uri=' . $redirect_uri . '&response_type=code&scope=' . $scope . '&state=' . $state . '#wechat_redirect';
-		
+	
+		//file_put_contents("/wwwroot/custom_fenxiao/wxlogin.log","oauth ".$redirect_uri.PHP_EOL,FILE_APPEND);
+	
 		header('Expires: 0');
 		header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
 		header('Cache-Control: no-store, no-cahe, must-revalidate');

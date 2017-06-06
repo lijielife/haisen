@@ -350,7 +350,17 @@ class CommonController extends Controller
         $thisurl = $this->remove_get_arg($thisurl);
  
         $url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$appid.'&redirect_uri='.urlencode($thisurl).'&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect';
-        $this->jump( $url );exit; //返回带code的URL
+     
+	if(strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
+           $_GET['inajax'] = 1;
+        }
+
+        if($_GET['inajax']!=1){
+        	$this->jump( $url );
+        }else{
+        	$res = json_encode(['url' => $url]);
+        	exit($res); //返回带code的URL
+        }
     }
     
     function get_user_parent_uid()

@@ -240,7 +240,7 @@ class Controller
         }
 
         $_this = & $GLOBALS["__{$classname_C}__"];
-        
+
         $_this->pre_function = $_this->__function;
         $_this->pre_module   = $_this->__module;
         $_this->pre_parms    = $_this->__parms;
@@ -254,7 +254,7 @@ class Controller
         $_this->__module    = $module;
         $_this->__parms     = $pargs;
         $_this->__args      = $pargs2;
-        
+       
         //loading this model
         $classname_M = ucwords($module).'Model';
         $varname_M   = ucwords($module);
@@ -315,7 +315,6 @@ class Controller
                 require $app_config;
             }
         }
-        
         $methods = get_class_methods($_this);
         if ( ! in_array($_this->__function, $methods) )
         {
@@ -323,7 +322,6 @@ class Controller
             die('Error:This method ('.$_this->__function.') is not exist!');
             exit;
         }
-        
         //call function
         $rt = call_user_func_array(array($_this, $_this->__function), $_this->__parms);
         //Record which function have runed.

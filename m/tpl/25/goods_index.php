@@ -297,13 +297,24 @@ margin-left:5px;
    */
   function addToCart_check_zone( goodsid, tt )
   {
+	//if ( typeof addToCart == 'undefined'){
+	//	alert('check fail');
+	//}else{
+	//	alert('check success');
+	//}
+
+
+	//alert("ready to check");
       var user_id = $("#user_id").val();
       if ( user_id == "" || typeof( user_id ) == 'undefined' ) {
+		//alert("check login fail");
           $('.returnmes').html( '你还没有登录！请先登录！' );return;
       }
+	//alert("check login success");
       var goods_zone = "<?php echo $rt['goodsinfo']['goods_zone']; ?>";
       if ( goods_zone == '2' )
       {
+	//alert("goods_zone = 2");
           var url = "<?php echo ADMIN_URL; ?>ajax.php?action=check_distributor";
           $.ajax({
             type: 'GET',
@@ -319,16 +330,18 @@ margin-left:5px;
                 }
                 else
                 {
+			//alert("ready to add");
                     addToCart( goodsid, tt );
                 }
             },
             error: function () {
-
+		//alert("check fail!");
             }
           });
       }
       else
       {
+	//alert("ready To ADD");
           addToCart( goodsid, tt );
       }
   }
