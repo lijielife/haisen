@@ -48,21 +48,41 @@
     </td>
 </tr>
 <?php } } ?>
-<tr>
-<td style="text-align:left;" class="pagesmoney">
-<div class="clear10"></div>
+
 <style>
-.pagesmoney a{ display:block; line-height:20px;margin-right:5px; color:#222; background-color:#ededed; border-bottom:2px solid #ccc; border-right:2px solid #ccc; text-decoration:none; float:left; padding-left:5px; padding-right:5px; text-align:center}
-.pagesmoney a:hover{ text-decoration:underline}
+.pagesmoney a
+{
+    display: block;
+    line-height: 20px;
+    margin-left: 80px;
+    color: #222;
+    background-color: #ededed;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    text-decoration: none;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center
+}
+
+.pagesmoney a:hover
+{
+    text-decoration: underline
+}
 </style>
+
+<tr>
+<td class="pagesmoney">
+<div class="clear10"></div>
 <?php
-    if ( ! empty( $rt['pages'] ) ) {
-    echo $rt['pages']['previ'];
-?>
-<?php 
-    echo $rt['pages']['next'];
+    if ( ! empty( $rt['pages'] ) )
+    {
+        echo $rt['pages']['previ'];
+        echo $rt['pages']['next'];
     }
 ?>
+<div class="clear10"></div>
 </td>
 </tr>
 </table>

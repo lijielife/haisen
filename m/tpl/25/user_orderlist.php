@@ -31,6 +31,10 @@
     border-bottom:2px solid #ccc;
     border-right:2px solid #ccc;
     margin-right:5px;
+    display: block;
+    float: left;
+    margin-bottom: 75px;
+    margin-left: 20px;
 }
 #main table td:hover{ background: #fafafa }
 #main table td p a
