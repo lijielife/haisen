@@ -153,7 +153,8 @@ color:#4F4D4D;
 #opquyubox p.pp{ height:22px; line-height:22px; font-size:14px; color:#D61B14}
 #opquyubox a{ padding:5px; padding-left:40px;display: inline-table; display:block;text-shadow: 1px 0 0 #fff;background:url(../images/li.png) 28px center no-repeat; font-size:14px;}
 #opquyubox a:hover{ text-decoration:none;background:url(../images/li.png) 28px center no-repeat #b3b5ab;}
-#main{ height:0px;}
+/*#main{ height:0px;}*/
+#main{}
 
 #opquyubox a b {
 padding: 3px 4px 3px 4px;
