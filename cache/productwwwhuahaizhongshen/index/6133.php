@@ -93,7 +93,7 @@
     'avg_shopping_rand' => NULL,
     'avg_saleafter_rand' => NULL,
   ),
-  'comment_count' => 0,
+  'comment_count' => -1,
   'commentlist' => 
   array (
   ),
@@ -137,7 +137,7 @@
     'openfx_minmoney' => '1',
     'openfxauto' => '1',
     'viewfxset' => '0',
-    'guanzhubuy' => '1',
+    'guanzhubuy' => '0',
     'vgoods_type' => '2',
     'wid' => '3',
     'userbonus' => '1',
@@ -146,5 +146,5 @@
     'fenhong180_h1' => '0',
     'fenhong180_h2' => '0',
   ),
-  'order_count' => '0',
+  'order_count' => '1',
 );$__tmp_uniqueid = "a303095ba405583152253be33cc9ecc5"; ?>

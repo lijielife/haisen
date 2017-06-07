@@ -694,12 +694,12 @@ class ShoppingController extends Controller
                 $type     = $types['type'];
                 $nickname = $types['consignee'];
 
-                $bIsSuccess = $this->App->update( 'goods_order_info', array(
-                     'shipping_status' => '2' 
-                ), 'order_sn', $order_sn );
+                //$bIsSuccess = $this->App->update( 'goods_order_info', array(
+                //     'shipping_status' => '2' 
+                //), 'order_sn', $order_sn );
                 
-                if ( $bIsSuccess )
-                {
+                //if ( $bIsSuccess )
+                //{
                     $field         = 'user_id,order_amount';
                     $sql           = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$order_id' LIMIT 1";
                     $aOrderInfo    = $this->App->findrow( $sql );
@@ -720,7 +720,7 @@ class ShoppingController extends Controller
                             $this->App->query( $sql );
                         }
                     }
-                }
+                //}
 
                 if ( $type == '3' )
                 {                    
@@ -1759,12 +1759,12 @@ class ShoppingController extends Controller
             
             if ( $uid > 0 )
             {
-                $bIsSuccess = $this->App->update( 'goods_order_info', array(
-                     'shipping_status' => '2' 
-                ), 'order_sn', $order_sn );
+                //$bIsSuccess = $this->App->update( 'goods_order_info', array(
+                //     'shipping_status' => '2' 
+                //), 'order_sn', $order_sn );
                 
-                if ( $bIsSuccess )
-                {
+               // if ( $bIsSuccess )
+                //{
                     $field         = 'user_id,order_amount';
                     $sql           = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$order_id' LIMIT 1";
                     $aOrderInfo    = $this->App->findrow( $sql );
@@ -1784,7 +1784,7 @@ class ShoppingController extends Controller
                             $this->App->query( $sql );
                         }
                     }
-                }
+                //}
 
 
                 $pwecha_id = $this->App->findvar( "SELECT wecha_id FROM `{$this->App->prefix()}user` WHERE user_id='$uid' AND is_subscribe='1' LIMIT 1" );

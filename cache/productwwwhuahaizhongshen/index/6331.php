@@ -149,7 +149,7 @@
     'openfx_minmoney' => '1',
     'openfxauto' => '1',
     'viewfxset' => '0',
-    'guanzhubuy' => '1',
+    'guanzhubuy' => '0',
     'vgoods_type' => '2',
     'wid' => '3',
     'userbonus' => '1',
