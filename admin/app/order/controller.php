@@ -776,7 +776,7 @@ class OrderController extends Controller
         {
             if ( $pushOption == 'rebate' ) {
                 /* 开始分佣 */
-                $this->rebate( $order_id );                
+               $this->rebate( $order_id, '2' );              
             } elseif ( $pushOption == 'dividend' ) {
                 /* 开始分红 by niripsa */
                 $this->dividend( $order_id );
@@ -1016,8 +1016,9 @@ class OrderController extends Controller
     
     /**
      * 返佣金算法
+     * action 1 确认收货  2 佣金分次
      */
-    public function rebate( $id )
+    public function rebate( $id, $action = '1' )
     {
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
@@ -1119,9 +1120,8 @@ class OrderController extends Controller
 
                     if ( $moeys > 0 )
                     {
-                        /* 佣金分次，计算每一次的佣金费用 */
-                        $moeys = $moeys / $order_info['commission_num'];
-                        $moeys = $this->format_price( $moeys );
+                        /* 根据 action 计算佣金 */
+                        $moeys = $this->_action_money( $action, $moeys, $order_info );
                     }
                     $this->writeLog( __FILE__ . "|uid:{$uid}| 1 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid );
                     /* 检查钱包状态 */
@@ -1172,14 +1172,13 @@ class OrderController extends Controller
                     
                     if ( $moeys > 0 )
                     {
-                        /* 佣金分次，计算每一次的佣金费用 */
-                        $moeys = $moeys / $order_info['commission_num'];
-                        $moeys = $this->format_price( $moeys );
+                        /* 根据 action 计算佣金 */
+                        $moeys = $this->_action_money( $action, $moeys, $order_info );
                     }
                     $this->writeLog( __FILE__ . "|uid:{$uid}| 2 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid2 );
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid2 );
-                    if ( !empty( $moeys ) && $wallet_status == '1' )
+                    if (  $moeys > 0 && $wallet_status == '1' )
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid2, $moeys );
@@ -1228,14 +1227,13 @@ class OrderController extends Controller
                     
                     if ( $moeys > 0 )
                     {
-                        /* 佣金分次，计算每一次的佣金费用 */
-                        $moeys = $moeys / $order_info['commission_num'];
-                        $moeys = $this->format_price( $moeys );
+                        /* 根据 action 计算佣金 */
+                        $moeys = $this->_action_money( $action, $moeys, $order_info );
                     }
                     $this->writeLog( __FILE__ . "|uid:{$uid}| 3 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid3 );
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid3 );
-                    if ( !empty( $moeys ) && $wallet_status == '1' )
+                    if (  $moeys > 0 && $wallet_status == '1' )
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid3, $moeys );
@@ -1283,14 +1281,13 @@ class OrderController extends Controller
                     }
                     if ( $moeys > 0 )
                     {
-                        /* 佣金分次，计算每一次的佣金费用 */
-                        $moeys = $moeys / $order_info['commission_num'];
-                        $moeys = $this->format_price( $moeys );
+                        /* 根据 action 计算佣金 */
+                        $moeys = $this->_action_money( $action, $moeys, $order_info );
                     }
                     $this->writeLog( __FILE__ . "|uid:{$uid}| 4 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid4 );
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid4 );
-                    if ( !empty( $moeys ) && $wallet_status == '1' )
+                    if (  $moeys > 0 && $wallet_status == '1' )
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid4, $moeys );
@@ -1305,10 +1302,64 @@ class OrderController extends Controller
             } //end of if uid4
 
             /* 剩余次数减1 commission_surplus - 1 */
-            $sql = "UPDATE `{$this->App->prefix()}goods_order_info` SET commission_surplus = commission_surplus - 1 WHERE order_id = '$order_id'";
-            $this->App->query( $sql );
+            /*$sql = "UPDATE `{$this->App->prefix()}goods_order_info` SET commission_surplus = commission_surplus - 1 WHERE order_id = '$order_id'";
+            $this->App->query( $sql );*/
+            /* 更新剩余佣金次数 */
+            $this->_up_commission_surplus( $action, $order_id );
         }
     }
+
+    /**
+     * 确认收货佣金将剩余佣金一次性返给会员，单推计算单次佣金
+     * @param $action   1 确认收货  2 单推返佣
+     * @param $moeys
+     * @param $order_info
+     */
+    private function _action_money( $action, $moeys, $order_info )
+    {
+        switch (  $action )
+        {
+            case '1':
+                $moeys = $moeys / $order_info['commission_num'] * $order_info['commission_surplus'];
+            break;
+
+            case '2':
+                $moeys = $moeys / $order_info['commission_num'];
+            break;
+
+            default:
+                $moeys = $moeys / $order_info['commission_num'];
+            break;
+        }
+        $moeys = $this->format_price( $moeys );
+        return $moeys;
+    }
+
+    /**
+     * 更新剩余佣金次数
+     * @param $action
+     * @param $order_id
+     */
+    private function _up_commission_surplus( $action, $order_id )
+    {
+        switch ( $action )
+        {
+            /* commission_surplus == 0 */
+            case '1':
+                $sql = "UPDATE `{$this->App->prefix()}goods_order_info` SET commission_surplus = 0 WHERE order_id = '$order_id'";
+                break;
+            /* decr 1 */
+            case '2':
+                $sql = "UPDATE `{$this->App->prefix()}goods_order_info` SET commission_surplus = commission_surplus - 1 WHERE order_id = '$order_id'";
+                break;
+            default:
+                break;
+        }
+
+        $this->App->query( $sql );
+    }
+
+
     
     /**
      * 根据钱包ID 把佣金增加至对应的钱包

@@ -12,3 +12,6 @@ cache/*
 #photos
 /photos/*
 photos/*
+
+.idea
+*.log

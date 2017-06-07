@@ -1962,7 +1962,7 @@ class UserController extends Controller
         $sql = "SELECT * FROM `{$this->App->prefix()}userconfig` LIMIT 1";
         $rts = $this->App->findrow( $sql );
         // 开启收货返佣选项
-        $field = 'user_id,parent_uid,parent_uid2,parent_uid3,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id';
+        $field = 'user_id,parent_uid,parent_uid2,parent_uid3,goods_amount,order_amount,order_sn,pay_status,shipping_status,order_id,commission_num,commission_surplus';
         $sql = "SELECT {$field} FROM `{$this->App->prefix()}goods_order_info` WHERE order_id = '$id' LIMIT 1";
         $order_info = $this->App->findrow( $sql );
         
@@ -2058,7 +2058,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|uid:{$uid}| 1 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid);
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid );
@@ -2066,6 +2070,12 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid, $moeys );
+                        /* 佣金剩余次数为0 */
+                        $data = array();
+                        $data['commission_surplus'] =0;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid );                                                
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -2106,7 +2116,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|uid:{$uid}| 2 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid2);
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid2 );
@@ -2114,6 +2128,12 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid2, $moeys );
+                        /* 佣金剩余次数为0 */
+                        $data = array();
+                        $data['commission_surplus'] =0;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );      
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid2 );                                             
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid2, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -2157,7 +2177,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|uid:{$uid}| 3 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid3); 
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid3 );
@@ -2165,6 +2189,12 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid3, $moeys );
+                        /* 佣金剩余次数为0 */
+                        $data = array();
+                        $data['commission_surplus'] =0;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );       
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid3 );                                            
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid3, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -2205,7 +2235,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|uid:{$uid}| 4 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid4); 
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid4 );
@@ -2213,6 +2247,12 @@ class UserController extends Controller
                     {
                         /* 加钱 */
                         $this->_add_money( $wallet_id, $parent_uid4, $moeys );
+                        /* 佣金剩余次数为0 */
+                        $data = array();
+                        $data['commission_surplus'] =0;
+                        $this->App->update( 'goods_order_info', $data, 'order_id', $id );   
+                        /* 减少 user_money_change_cache */
+                        $this->_decr_money_change_cache( $moeys, $order_info['order_sn'], $parent_uid4 );                                                
                         /* 加记录 */
                         $this->_add_money_change( $uid, $parent_uid4, $order_sn, $moeys, $wallet_id );
                         /* 发通知 */
@@ -2326,7 +2366,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|2|uid:{$uid}| 1 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid); 
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid );
@@ -2375,7 +2419,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|2|uid:{$uid}| 2 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid2); 
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid2 );
@@ -2420,7 +2468,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|2|uid:{$uid}| 3 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid3); 
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid3 );
@@ -2468,7 +2520,11 @@ class UserController extends Controller
                     $this->writeLog(__FILE__ . "|2|uid:{$uid}| 4 level | money:" . $moeys . "|ticheng:" . $off . '|rank:' . $rank . '|parent_id:' . $parent_uid4); 
                     if ( $moeys > 0 )
                     {
-                        $moeys = format_price($moeys);
+                        /* 佣金分次，计算每一次的佣金费用 */
+                        $moeys = $moeys / $order_info['commission_num'];
+                        /* 每一次的佣金费用 x 剩余佣金次数 = 剩余佣金金额 */
+                        $moeys = $moeys * $order_info['commission_surplus'];
+                        $moeys = $this->format_price( $moeys );
                     }
                     /* 检查钱包状态 */
                     $wallet_status = $this->_wallet_status( $wallet_id, $parent_uid4 );
