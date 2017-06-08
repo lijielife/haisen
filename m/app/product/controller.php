@@ -537,12 +537,22 @@ class ProductController extends Controller
         
         //判断是否需要关注后才能购买
         $uid = $this->Session->read('User.uid');
+        if(!($uid>0)){ //需要先登录
+            $result['error'] = 3;
+            $result['message'] = '请你先登录后再操作！';
+            die($json->encode($result));
+        }
         $rrL = $this->action('common','get_userconfig');
         if($rrL['guanzhubuy']=='0'){
+            //查询数据库
             $sql = "SELECT is_subscribe FROM `{$this->App->prefix()}user` WHERE user_id='$uid' LIMIT 1";
             $this->_writeLog(__FILE__ . $sql);
             $is_subscribe = $this->App->findvar($sql);
             $is_subscribe = empty($is_subscribe) ? '0' : $is_subscribe;
+            if ($is_subscribe=='0') {
+                //如果发现未关注，检测一下微信是否关注
+                $is_subscribe = $this->action('common','get_user_subscribe',$sURL);
+            }
             if($is_subscribe=='0'){
                 $result['error'] = 22;
                 $result['message'] = '未关注不能购买！';
