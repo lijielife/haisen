@@ -551,7 +551,7 @@ class ProductController extends Controller
             $is_subscribe = empty($is_subscribe) ? '0' : $is_subscribe;
             if ($is_subscribe=='0') {
                 //如果发现未关注，检测一下微信是否关注
-                $is_subscribe = $this->action('common','get_user_subscribe',$sURL);
+                $is_subscribe = $this->action('common','get_user_subscribe',$uid);
             }
             if($is_subscribe=='0'){
                 $result['error'] = 22;
