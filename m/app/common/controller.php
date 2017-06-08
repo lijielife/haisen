@@ -119,7 +119,7 @@ class CommonController extends Controller
     }
     
     
-    // 获取access_token
+    // 获取access_token(这里是普通的access_token,不是微信网页授权的那一个)
     function _get_access_token()
     {
         $t     = Common::_return_px();
@@ -177,6 +177,25 @@ class CommonController extends Controller
         }
       
         return $rt;
+    }
+
+    //查询用户微信关注状态
+    function get_user_subscribe( $uid ){
+        $sql = "SELECT wecha_id FROM `{$this->App->prefix()}user` WHERE user_id='$uid' LIMIT 1";
+        $open_id = $this->App->findvar($sql);
+        $open_id = "ofg0VwULEus1-MFvRK24XDXKdEaQ";//测试用
+        //从文件中获取access_token
+        $access_token = $this->_get_access_token();
+        //调用微信接口，查询关注状态
+        $sURL = "https://api.weixin.qq.com/cgi-bin/user/info?access_token={$access_token}&openid={$open_id}&lang=zh_CN";
+        $is_subscribe = json_decode($this->curlGet($sURL),TRUE)['subscribe'];
+        if ($is_subscribe == '1') {
+            $aData = [];
+            $aData['is_subscribe'] = $is_subscribe;    
+            $this->App->update( 'user', $aData, 'user_id', $uid );
+        }
+
+        return $is_subscribe;
     }
     
     function get_share_user_info()

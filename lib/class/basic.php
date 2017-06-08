@@ -751,6 +751,7 @@ class Basic{
                 if (ord($string{$i}) > 127) {
                     if (array_values($ppArr) == $tmpOrd) {
                         break ;
+                        //break 2;
                     }else if(count($ppArr) >= $size) {
                         array_shift($ppArr);
                     }
