@@ -120,14 +120,16 @@ class CommonController extends Controller
     
     
     // 获取access_token(这里是普通的access_token,不是微信网页授权的那一个)
-    function _get_access_token()
+    function _get_access_token( $refresh = false )
     {
         $t     = Common::_return_px();
         $cache = Import::ajincache();
         $cache->SetFunction( __FUNCTION__ );
         $cache->SetMode( 'sitemes' . $t );
         $fn = $cache->fpath( func_get_args() );
-	//$fn=0;
+        if ($refresh == true) {            
+            $fn=0;
+        }
 
         if ( file_exists( $fn ) && (time() - filemtime($fn) < 7000) )
         {
@@ -186,7 +188,7 @@ class CommonController extends Controller
         $open_id = $this->App->findvar($sql);
         //$open_id = "ofg0VwULEus1-MFvRK24XDXKdEaQ";//测试用
         //从文件中获取access_token
-        $access_token = $this->_get_access_token();
+        $access_token = $this->_get_access_token( true );
         //调用微信接口，查询关注状态
         $sURL = "https://api.weixin.qq.com/cgi-bin/user/info?access_token={$access_token}&openid={$open_id}&lang=zh_CN";
         $is_subscribe = json_decode($this->curlGet($sURL),TRUE)['subscribe'];
@@ -621,7 +623,7 @@ class CommonController extends Controller
             
             $code = isset($_GET['code']) ? $_GET['code'] : '';
             if ( ! empty( $code ) ) {                
-                $access_token = $this->_get_access_token();    
+                $access_token = $this->_get_access_token( true );    
                 $url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$appsecret.'&code='.$code.'&grant_type=authorization_code';
                 $url = preg_replace('/\s/','',$url);
                 $con = $this->curlGet($url);
