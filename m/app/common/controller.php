@@ -126,12 +126,10 @@ class CommonController extends Controller
         $cache = Import::ajincache();
         $cache->SetFunction( __FUNCTION__ );
         $cache->SetMode( 'sitemes' . $t );
-        $fn = $cache->fpath( func_get_args() );
-        if ($refresh == true) {            
-            $fn=0;
-        }
+        //$fn = $cache->fpath( func_get_args() );
+	$fn = $cache->fpath( array() );
 
-        if ( file_exists( $fn ) && (time() - filemtime($fn) < 7000) )
+        if ( file_exists( $fn ) && (time() - filemtime($fn) < 7000) && $refresh == false )
         {
             include( $fn );
         }
@@ -188,11 +186,11 @@ class CommonController extends Controller
         $open_id = $this->App->findvar($sql);
         //$open_id = "ofg0VwULEus1-MFvRK24XDXKdEaQ";//测试用
         //从文件中获取access_token
-        $access_token = $this->_get_access_token( true );
+        $access_token = $this->_get_access_token();
         //调用微信接口，查询关注状态
         $sURL = "https://api.weixin.qq.com/cgi-bin/user/info?access_token={$access_token}&openid={$open_id}&lang=zh_CN";
         $is_subscribe = json_decode($this->curlGet($sURL),TRUE)['subscribe'];
-	file_put_contents("/wwwroot/custom_fenxiao/wxpay.log",$this->curlGet($sURL).PHP_EOL,FILE_APPEND);
+	file_put_contents("/wwwroot/custom_fenxiao/wxpay.log",date("Y-m-d H:i:s",time()).$this->curlGet($sURL).PHP_EOL,FILE_APPEND);
 	file_put_contents("/wwwroot/custom_fenxiao/wxpay.log",json_encode($is_subscribe).PHP_EOL,FILE_APPEND);
 	file_put_contents("/wwwroot/custom_fenxiao/wxpay.log",json_encode($access_token).PHP_EOL,FILE_APPEND);
         if ($is_subscribe == '1') {
@@ -623,12 +621,12 @@ class CommonController extends Controller
             
             $code = isset($_GET['code']) ? $_GET['code'] : '';
             if ( ! empty( $code ) ) {                
-                $access_token = $this->_get_access_token( true );    
+                $access_token = $this->_get_access_token(true);    
                 $url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$appsecret.'&code='.$code.'&grant_type=authorization_code';
                 $url = preg_replace('/\s/','',$url);
                 $con = $this->curlGet($url);
 	
-		file_put_contents("/wwwroot/custom_fenxiao/userinfo.log","common access_token: ".$access_token.PHP_EOL,FILE_APPEND);
+		file_put_contents("/wwwroot/custom_fenxiao/userinfo.log",date("Y-m-d H:i:s",time())."common access_token: ".$access_token.PHP_EOL,FILE_APPEND);
 		file_put_contents("/wwwroot/custom_fenxiao/userinfo.log","oauth2.0 access_token: ".$con.PHP_EOL,FILE_APPEND);
 
                 if ( ! empty( $con ) ) {
@@ -658,7 +656,13 @@ class CommonController extends Controller
                     $url = 'https://api.weixin.qq.com/cgi-bin/user/info?access_token='.$access_token.'&openid='.$wecha_id.'&lang=zh_CN';
                     $con = $this->curlGet($url);
 
-			file_put_contents("/wwwroot/custom_fenxiao/userinfo.log","USERINFO:  ".$con.PHP_EOL.PHP_EOL,FILE_APPEND);
+			file_put_contents("/wwwroot/custom_fenxiao/userinfo.log","WX_ID: ".$wecha_id.PHP_EOL."USERINFO:  ".$con.PHP_EOL,FILE_APPEND);
+
+                    if(strpos($con,"errcode")){
+                        $access_token = $this->_get_access_token(true);
+                        $con = $this->curlGet($url);
+                        file_put_contents("/wwwroot/custom_fenxiao/userinfo.log","TRY AGAIN! USERINFO:  ".$con.PHP_EOL.PHP_EOL,FILE_APPEND);
+                    }
 
                     if ( ! empty($con) ) {
                         $json = json_decode( $con );
